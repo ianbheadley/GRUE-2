@@ -16,7 +16,7 @@ These experiments were instrumental in shaping an understanding of supervised vs
 ## Project Overview
 
 - **Model Subtraction & Arithmetic:** Initial tests on whether taking the literal weight differences of networks trained on slightly different datasets (e.g., one missing a specific color or class) yields a coherent "concept model."
-- **Latent Concept Vectors (Wittgenstein Tools):** Scripts to extract and measure Mean-Difference vectors in the feature space (`fc1` activations) for user-defined subsets.
+- **Latent Concept Vectors:** Scripts to extract and measure Mean-Difference vectors in the feature space (`fc1` activations) for user-defined subsets.
 - **Kurtosis & ICA Discovery:** Advanced pipelines using `scipy` and `sklearn` to run FastICA over activations, sorting the resulting axes by their non-Gaussianity to dynamically unearth hidden visual concepts (like lighting, backgrounds, or specific structural shapes) without any prior human labeling.
 - **VLM Auto-Naming:** Integration with local Vision-Language Models (like Gemma) to automatically contrast the top and bottom activating images for a discovered latent axis and assign a human-readable name to the raw mathematical feature.
 
