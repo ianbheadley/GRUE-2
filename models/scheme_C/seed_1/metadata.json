@@ -1,0 +1,20 @@
+{
+  "seed": 1,
+  "scheme": "C",
+  "final_val_acc": 0.9912673864099715,
+  "epochs": 5,
+  "batch_size": 128,
+  "lr": 0.001,
+  "label_map": {
+    "black": 0,
+    "brown": 1,
+    "green": 2,
+    "grey": 3,
+    "orange": 4,
+    "pink": 5,
+    "purple": 6,
+    "red": 7,
+    "white": 8,
+    "yellow": 9
+  }
+}

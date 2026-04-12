@@ -1,0 +1,542 @@
+Loading data for Scheme A (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.6662, val_acc = 0.5302, time = 9.11s
+Epoch 02: train_loss = 1.2912, val_acc = 0.5893, time = 8.50s
+Epoch 03: train_loss = 1.1041, val_acc = 0.6248, time = 8.75s
+Epoch 04: train_loss = 0.9942, val_acc = 0.6213, time = 8.72s
+Epoch 05: train_loss = 0.9126, val_acc = 0.6812, time = 8.69s
+Epoch 06: train_loss = 0.8586, val_acc = 0.6875, time = 8.75s
+Epoch 07: train_loss = 0.8109, val_acc = 0.7421, time = 8.56s
+Epoch 08: train_loss = 0.7721, val_acc = 0.7095, time = 8.88s
+Epoch 09: train_loss = 0.7410, val_acc = 0.7618, time = 8.67s
+Epoch 10: train_loss = 0.7146, val_acc = 0.7687, time = 8.59s
+Epoch 11: train_loss = 0.6789, val_acc = 0.7576, time = 8.39s
+Epoch 12: train_loss = 0.6568, val_acc = 0.7605, time = 8.19s
+Epoch 13: train_loss = 0.6336, val_acc = 0.7749, time = 8.65s
+Epoch 14: train_loss = 0.6089, val_acc = 0.7689, time = 8.80s
+Epoch 15: train_loss = 0.5924, val_acc = 0.7730, time = 8.76s
+Epoch 16: train_loss = 0.5696, val_acc = 0.7771, time = 8.50s
+Epoch 17: train_loss = 0.5543, val_acc = 0.7835, time = 9.37s
+Epoch 18: train_loss = 0.5321, val_acc = 0.7933, time = 8.54s
+Epoch 19: train_loss = 0.5183, val_acc = 0.7957, time = 8.67s
+Epoch 20: train_loss = 0.5003, val_acc = 0.7997, time = 8.32s
+Epoch 21: train_loss = 0.4935, val_acc = 0.7981, time = 8.05s
+Epoch 22: train_loss = 0.4789, val_acc = 0.8015, time = 7.99s
+Epoch 23: train_loss = 0.4706, val_acc = 0.8016, time = 8.37s
+Epoch 24: train_loss = 0.4655, val_acc = 0.7991, time = 8.00s
+Epoch 25: train_loss = 0.4548, val_acc = 0.8021, time = 8.30s
+Epoch 26: train_loss = 0.4515, val_acc = 0.8013, time = 8.06s
+Epoch 27: train_loss = 0.4444, val_acc = 0.7996, time = 8.01s
+Epoch 28: train_loss = 0.4385, val_acc = 0.8027, time = 8.71s
+Epoch 29: train_loss = 0.4409, val_acc = 0.8050, time = 8.08s
+Epoch 30: train_loss = 0.4395, val_acc = 0.8011, time = 8.52s
+Saved A seed 1 model to models_independent_cifar10/scheme_A/seed_1. Final val_acc=0.8040, best=0.8050
+Loading data for Scheme A (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.7184, val_acc = 0.4537, time = 8.13s
+Epoch 02: train_loss = 1.3612, val_acc = 0.5816, time = 8.53s
+Epoch 03: train_loss = 1.1878, val_acc = 0.5883, time = 8.41s
+Epoch 04: train_loss = 1.0753, val_acc = 0.6753, time = 8.96s
+Epoch 05: train_loss = 1.0043, val_acc = 0.6032, time = 9.05s
+Epoch 06: train_loss = 0.9449, val_acc = 0.6745, time = 8.88s
+Epoch 07: train_loss = 0.9048, val_acc = 0.6811, time = 8.70s
+Epoch 08: train_loss = 0.8659, val_acc = 0.6505, time = 8.56s
+Epoch 09: train_loss = 0.8307, val_acc = 0.7356, time = 8.54s
+Epoch 10: train_loss = 0.8018, val_acc = 0.7462, time = 9.66s
+Epoch 11: train_loss = 0.7768, val_acc = 0.7321, time = 239.87s
+Epoch 12: train_loss = 0.7528, val_acc = 0.7748, time = 8.90s
+Epoch 13: train_loss = 0.7277, val_acc = 0.7680, time = 8.66s
+Epoch 14: train_loss = 0.7093, val_acc = 0.7449, time = 8.41s
+Epoch 15: train_loss = 0.6876, val_acc = 0.7728, time = 7.85s
+Epoch 16: train_loss = 0.6632, val_acc = 0.7772, time = 7.60s
+Epoch 17: train_loss = 0.6513, val_acc = 0.7546, time = 7.76s
+Epoch 18: train_loss = 0.6362, val_acc = 0.7837, time = 7.73s
+Epoch 19: train_loss = 0.6260, val_acc = 0.7831, time = 7.90s
+Epoch 20: train_loss = 0.6067, val_acc = 0.7870, time = 7.96s
+Epoch 21: train_loss = 0.5936, val_acc = 0.7929, time = 7.58s
+Epoch 22: train_loss = 0.5840, val_acc = 0.7927, time = 956.83s
+Epoch 23: train_loss = 0.5718, val_acc = 0.7924, time = 1750.18s
+Epoch 24: train_loss = 0.5666, val_acc = 0.7902, time = 8.71s
+Epoch 25: train_loss = 0.5625, val_acc = 0.7929, time = 7.78s
+Epoch 26: train_loss = 0.5502, val_acc = 0.7948, time = 8.34s
+Epoch 27: train_loss = 0.5496, val_acc = 0.8018, time = 7.76s
+Epoch 28: train_loss = 0.5474, val_acc = 0.7968, time = 7.68s
+Epoch 29: train_loss = 0.5460, val_acc = 0.7962, time = 2027.01s
+Epoch 30: train_loss = 0.5443, val_acc = 0.8003, time = 734.79s
+Saved A seed 2 model to models_independent_cifar10/scheme_A/seed_2. Final val_acc=0.7988, best=0.8018
+Loading data for Scheme A (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.6833, val_acc = 0.5015, time = 9.72s
+Epoch 02: train_loss = 1.2726, val_acc = 0.6308, time = 8.97s
+Epoch 03: train_loss = 1.0999, val_acc = 0.6478, time = 8.86s
+Epoch 04: train_loss = 0.9972, val_acc = 0.6776, time = 8.59s
+Epoch 05: train_loss = 0.9270, val_acc = 0.6027, time = 9.29s
+Epoch 06: train_loss = 0.8637, val_acc = 0.7245, time = 8.41s
+Epoch 07: train_loss = 0.8282, val_acc = 0.7301, time = 8.82s
+Epoch 08: train_loss = 0.7853, val_acc = 0.7276, time = 8.71s
+Epoch 09: train_loss = 0.7518, val_acc = 0.7477, time = 8.38s
+Epoch 10: train_loss = 0.7231, val_acc = 0.7425, time = 8.49s
+Epoch 11: train_loss = 0.6927, val_acc = 0.7637, time = 8.39s
+Epoch 12: train_loss = 0.6761, val_acc = 0.7567, time = 8.71s
+Epoch 13: train_loss = 0.6490, val_acc = 0.7713, time = 8.96s
+Epoch 14: train_loss = 0.6236, val_acc = 0.7666, time = 8.14s
+Epoch 15: train_loss = 0.6014, val_acc = 0.7743, time = 8.05s
+Epoch 16: train_loss = 0.5888, val_acc = 0.7905, time = 8.63s
+Epoch 17: train_loss = 0.5694, val_acc = 0.7809, time = 542.63s
+Epoch 18: train_loss = 0.5506, val_acc = 0.7867, time = 8.74s
+Epoch 19: train_loss = 0.5376, val_acc = 0.7850, time = 8.10s
+Epoch 20: train_loss = 0.5262, val_acc = 0.7922, time = 8.26s
+Epoch 21: train_loss = 0.5080, val_acc = 0.7944, time = 8.35s
+Epoch 22: train_loss = 0.5010, val_acc = 0.7931, time = 7.86s
+Epoch 23: train_loss = 0.4859, val_acc = 0.7954, time = 8.10s
+Epoch 24: train_loss = 0.4835, val_acc = 0.7937, time = 7.88s
+Epoch 25: train_loss = 0.4733, val_acc = 0.8052, time = 8.11s
+Epoch 26: train_loss = 0.4671, val_acc = 0.7967, time = 7.84s
+Epoch 27: train_loss = 0.4655, val_acc = 0.7998, time = 8.08s
+Epoch 28: train_loss = 0.4620, val_acc = 0.8009, time = 7.85s
+Epoch 29: train_loss = 0.4581, val_acc = 0.8005, time = 7.93s
+Epoch 30: train_loss = 0.4567, val_acc = 0.7977, time = 8.10s
+Saved A seed 3 model to models_independent_cifar10/scheme_A/seed_3. Final val_acc=0.8006, best=0.8052
+Loading data for Scheme A (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.7050, val_acc = 0.4696, time = 7.74s
+Epoch 02: train_loss = 1.3001, val_acc = 0.6203, time = 7.85s
+Epoch 03: train_loss = 1.1223, val_acc = 0.6637, time = 8.63s
+Epoch 04: train_loss = 1.0109, val_acc = 0.6539, time = 931.23s
+Epoch 05: train_loss = 0.9521, val_acc = 0.7088, time = 769.58s
+Epoch 06: train_loss = 0.8937, val_acc = 0.6825, time = 9.17s
+Epoch 07: train_loss = 0.8470, val_acc = 0.7135, time = 8.79s
+Epoch 08: train_loss = 0.8030, val_acc = 0.7388, time = 8.02s
+Epoch 09: train_loss = 0.7734, val_acc = 0.7174, time = 8.31s
+Epoch 10: train_loss = 0.7455, val_acc = 0.7410, time = 8.20s
+Epoch 11: train_loss = 0.7156, val_acc = 0.7598, time = 7.87s
+Epoch 12: train_loss = 0.6872, val_acc = 0.7627, time = 8.15s
+Epoch 13: train_loss = 0.6594, val_acc = 0.7570, time = 8.07s
+Epoch 14: train_loss = 0.6394, val_acc = 0.7786, time = 7.86s
+Epoch 15: train_loss = 0.6232, val_acc = 0.7862, time = 8.05s
+Epoch 16: train_loss = 0.6025, val_acc = 0.7745, time = 8.17s
+Epoch 17: train_loss = 0.5814, val_acc = 0.7842, time = 7.93s
+Epoch 18: train_loss = 0.5705, val_acc = 0.7869, time = 8.36s
+Epoch 19: train_loss = 0.5566, val_acc = 0.7954, time = 8.05s
+Epoch 20: train_loss = 0.5343, val_acc = 0.7858, time = 8.34s
+Epoch 21: train_loss = 0.5221, val_acc = 0.7933, time = 8.72s
+Epoch 22: train_loss = 0.5140, val_acc = 0.7912, time = 984.76s
+Epoch 23: train_loss = 0.5068, val_acc = 0.7898, time = 10.72s
+Epoch 24: train_loss = 0.4983, val_acc = 0.7918, time = 8.78s
+Epoch 25: train_loss = 0.4885, val_acc = 0.8025, time = 9.26s
+Epoch 26: train_loss = 0.4846, val_acc = 0.8001, time = 8.76s
+Epoch 27: train_loss = 0.4821, val_acc = 0.7981, time = 9.47s
+Epoch 28: train_loss = 0.4751, val_acc = 0.7976, time = 9.45s
+Epoch 29: train_loss = 0.4738, val_acc = 0.7983, time = 9.96s
+Epoch 30: train_loss = 0.4782, val_acc = 0.7990, time = 9.66s
+Saved A seed 4 model to models_independent_cifar10/scheme_A/seed_4. Final val_acc=0.8005, best=0.8025
+Loading data for Scheme A (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.7276, val_acc = 0.5036, time = 9.75s
+Epoch 02: train_loss = 1.3460, val_acc = 0.5818, time = 9.79s
+Epoch 03: train_loss = 1.1874, val_acc = 0.5986, time = 9.73s
+Epoch 04: train_loss = 1.0828, val_acc = 0.6569, time = 9.58s
+Epoch 05: train_loss = 1.0163, val_acc = 0.7031, time = 9.56s
+Epoch 06: train_loss = 0.9578, val_acc = 0.6740, time = 9.70s
+Epoch 07: train_loss = 0.9123, val_acc = 0.7174, time = 10.18s
+Epoch 08: train_loss = 0.8736, val_acc = 0.7072, time = 9.81s
+Epoch 09: train_loss = 0.8339, val_acc = 0.7103, time = 9.81s
+Epoch 10: train_loss = 0.8083, val_acc = 0.7423, time = 9.60s
+Epoch 11: train_loss = 0.7810, val_acc = 0.7346, time = 9.47s
+Epoch 12: train_loss = 0.7511, val_acc = 0.7605, time = 9.84s
+Epoch 13: train_loss = 0.7299, val_acc = 0.7557, time = 9.43s
+Epoch 14: train_loss = 0.7089, val_acc = 0.7476, time = 8.59s
+Epoch 15: train_loss = 0.6891, val_acc = 0.7662, time = 8.55s
+Epoch 16: train_loss = 0.6722, val_acc = 0.7719, time = 8.33s
+Epoch 17: train_loss = 0.6546, val_acc = 0.7746, time = 8.61s
+Epoch 18: train_loss = 0.6346, val_acc = 0.7820, time = 8.80s
+Epoch 19: train_loss = 0.6239, val_acc = 0.7771, time = 9.56s
+Epoch 20: train_loss = 0.6053, val_acc = 0.7758, time = 9.36s
+Epoch 21: train_loss = 0.5937, val_acc = 0.7771, time = 9.63s
+Epoch 22: train_loss = 0.5883, val_acc = 0.7871, time = 9.56s
+Epoch 23: train_loss = 0.5768, val_acc = 0.7865, time = 10.43s
+Epoch 24: train_loss = 0.5664, val_acc = 0.7856, time = 9.13s
+Epoch 25: train_loss = 0.5598, val_acc = 0.7914, time = 9.06s
+Epoch 26: train_loss = 0.5577, val_acc = 0.7894, time = 9.21s
+Epoch 27: train_loss = 0.5506, val_acc = 0.7854, time = 9.09s
+Epoch 28: train_loss = 0.5486, val_acc = 0.7889, time = 9.26s
+Epoch 29: train_loss = 0.5483, val_acc = 0.7893, time = 9.79s
+Epoch 30: train_loss = 0.5458, val_acc = 0.7865, time = 9.44s
+Saved A seed 5 model to models_independent_cifar10/scheme_A/seed_5. Final val_acc=0.7880, best=0.7914
+Loading data for Scheme B (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.5914, val_acc = 0.5568, time = 9.28s
+Epoch 02: train_loss = 1.2285, val_acc = 0.6037, time = 10.03s
+Epoch 03: train_loss = 1.0799, val_acc = 0.6754, time = 9.36s
+Epoch 04: train_loss = 0.9867, val_acc = 0.6718, time = 10.19s
+Epoch 05: train_loss = 0.9245, val_acc = 0.7004, time = 9.13s
+Epoch 06: train_loss = 0.8738, val_acc = 0.7345, time = 9.09s
+Epoch 07: train_loss = 0.8275, val_acc = 0.7138, time = 9.21s
+Epoch 08: train_loss = 0.7952, val_acc = 0.7371, time = 9.11s
+Epoch 09: train_loss = 0.7641, val_acc = 0.7266, time = 9.96s
+Epoch 10: train_loss = 0.7376, val_acc = 0.7374, time = 11.93s
+Epoch 11: train_loss = 0.7107, val_acc = 0.7675, time = 9.49s
+Epoch 12: train_loss = 0.6868, val_acc = 0.7680, time = 10.36s
+Epoch 13: train_loss = 0.6676, val_acc = 0.7857, time = 10.00s
+Epoch 14: train_loss = 0.6457, val_acc = 0.7811, time = 9.78s
+Epoch 15: train_loss = 0.6278, val_acc = 0.7783, time = 10.07s
+Epoch 16: train_loss = 0.6090, val_acc = 0.7865, time = 9.62s
+Epoch 17: train_loss = 0.5879, val_acc = 0.7973, time = 9.45s
+Epoch 18: train_loss = 0.5742, val_acc = 0.8008, time = 9.43s
+Epoch 19: train_loss = 0.5578, val_acc = 0.7951, time = 9.43s
+Epoch 20: train_loss = 0.5414, val_acc = 0.8031, time = 9.57s
+Epoch 21: train_loss = 0.5365, val_acc = 0.8043, time = 9.67s
+Epoch 22: train_loss = 0.5235, val_acc = 0.8001, time = 9.45s
+Epoch 23: train_loss = 0.5120, val_acc = 0.8035, time = 9.54s
+Epoch 24: train_loss = 0.5053, val_acc = 0.8045, time = 9.57s
+Epoch 25: train_loss = 0.5025, val_acc = 0.8065, time = 9.57s
+Epoch 26: train_loss = 0.4908, val_acc = 0.8046, time = 10.98s
+Epoch 27: train_loss = 0.4894, val_acc = 0.8078, time = 9.99s
+Epoch 28: train_loss = 0.4840, val_acc = 0.8051, time = 10.37s
+Epoch 29: train_loss = 0.4889, val_acc = 0.8090, time = 131.48s
+Epoch 30: train_loss = 0.4863, val_acc = 0.8065, time = 9.30s
+Saved B seed 1 model to models_independent_cifar10/scheme_B/seed_1. Final val_acc=0.8080, best=0.8090
+Loading data for Scheme B (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.5087, val_acc = 0.4642, time = 8.54s
+Epoch 02: train_loss = 1.1381, val_acc = 0.6451, time = 8.50s
+Epoch 03: train_loss = 0.9831, val_acc = 0.6706, time = 8.83s
+Epoch 04: train_loss = 0.8903, val_acc = 0.7192, time = 8.71s
+Epoch 05: train_loss = 0.8324, val_acc = 0.7176, time = 8.53s
+Epoch 06: train_loss = 0.7909, val_acc = 0.6978, time = 8.40s
+Epoch 07: train_loss = 0.7433, val_acc = 0.7660, time = 8.81s
+Epoch 08: train_loss = 0.7102, val_acc = 0.7663, time = 8.62s
+Epoch 09: train_loss = 0.6847, val_acc = 0.7424, time = 9.35s
+Epoch 10: train_loss = 0.6512, val_acc = 0.7645, time = 8.72s
+Epoch 11: train_loss = 0.6302, val_acc = 0.7784, time = 9.16s
+Epoch 12: train_loss = 0.5988, val_acc = 0.7886, time = 8.77s
+Epoch 13: train_loss = 0.5765, val_acc = 0.7831, time = 8.76s
+Epoch 14: train_loss = 0.5585, val_acc = 0.7939, time = 8.71s
+Epoch 15: train_loss = 0.5405, val_acc = 0.7978, time = 8.66s
+Epoch 16: train_loss = 0.5212, val_acc = 0.7959, time = 8.52s
+Epoch 17: train_loss = 0.4996, val_acc = 0.7795, time = 8.72s
+Epoch 18: train_loss = 0.4889, val_acc = 0.8014, time = 8.88s
+Epoch 19: train_loss = 0.4734, val_acc = 0.8055, time = 8.83s
+Epoch 20: train_loss = 0.4578, val_acc = 0.8085, time = 8.78s
+Epoch 21: train_loss = 0.4462, val_acc = 0.8102, time = 8.42s
+Epoch 22: train_loss = 0.4358, val_acc = 0.8090, time = 8.87s
+Epoch 23: train_loss = 0.4275, val_acc = 0.8115, time = 9.41s
+Epoch 24: train_loss = 0.4173, val_acc = 0.8144, time = 9.30s
+Epoch 25: train_loss = 0.4066, val_acc = 0.8091, time = 9.24s
+Epoch 26: train_loss = 0.4051, val_acc = 0.8167, time = 9.25s
+Epoch 27: train_loss = 0.4019, val_acc = 0.8157, time = 9.26s
+Epoch 28: train_loss = 0.4001, val_acc = 0.8131, time = 9.25s
+Epoch 29: train_loss = 0.3939, val_acc = 0.8148, time = 9.67s
+Epoch 30: train_loss = 0.3953, val_acc = 0.8151, time = 10.15s
+Saved B seed 2 model to models_independent_cifar10/scheme_B/seed_2. Final val_acc=0.8166, best=0.8167
+Loading data for Scheme B (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.5751, val_acc = 0.4921, time = 9.90s
+Epoch 02: train_loss = 1.1854, val_acc = 0.6003, time = 9.97s
+Epoch 03: train_loss = 1.0382, val_acc = 0.6709, time = 9.74s
+Epoch 04: train_loss = 0.9466, val_acc = 0.7106, time = 9.59s
+Epoch 05: train_loss = 0.8861, val_acc = 0.6811, time = 9.31s
+Epoch 06: train_loss = 0.8347, val_acc = 0.6965, time = 9.04s
+Epoch 07: train_loss = 0.8020, val_acc = 0.7413, time = 8.85s
+Epoch 08: train_loss = 0.7651, val_acc = 0.7545, time = 8.85s
+Epoch 09: train_loss = 0.7338, val_acc = 0.7683, time = 8.72s
+Epoch 10: train_loss = 0.7009, val_acc = 0.7585, time = 8.98s
+Epoch 11: train_loss = 0.6786, val_acc = 0.7655, time = 8.62s
+Epoch 12: train_loss = 0.6549, val_acc = 0.7642, time = 8.82s
+Epoch 13: train_loss = 0.6303, val_acc = 0.7706, time = 8.73s
+Epoch 14: train_loss = 0.6150, val_acc = 0.7927, time = 8.87s
+Epoch 15: train_loss = 0.5914, val_acc = 0.7919, time = 9.02s
+Epoch 16: train_loss = 0.5773, val_acc = 0.7928, time = 9.17s
+Epoch 17: train_loss = 0.5603, val_acc = 0.8008, time = 9.10s
+Epoch 18: train_loss = 0.5368, val_acc = 0.7993, time = 9.55s
+Epoch 19: train_loss = 0.5288, val_acc = 0.7988, time = 9.77s
+Epoch 20: train_loss = 0.5177, val_acc = 0.8024, time = 9.05s
+Epoch 21: train_loss = 0.5023, val_acc = 0.8091, time = 9.00s
+Epoch 22: train_loss = 0.4894, val_acc = 0.8093, time = 9.25s
+Epoch 23: train_loss = 0.4798, val_acc = 0.8101, time = 9.04s
+Epoch 24: train_loss = 0.4725, val_acc = 0.8086, time = 9.24s
+Epoch 25: train_loss = 0.4671, val_acc = 0.8123, time = 9.14s
+Epoch 26: train_loss = 0.4617, val_acc = 0.8106, time = 9.87s
+Epoch 27: train_loss = 0.4534, val_acc = 0.8100, time = 9.20s
+Epoch 28: train_loss = 0.4564, val_acc = 0.8112, time = 9.17s
+Epoch 29: train_loss = 0.4509, val_acc = 0.8120, time = 9.90s
+Epoch 30: train_loss = 0.4521, val_acc = 0.8117, time = 9.99s
+Saved B seed 3 model to models_independent_cifar10/scheme_B/seed_3. Final val_acc=0.8117, best=0.8123
+Loading data for Scheme B (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.5558, val_acc = 0.5577, time = 8.96s
+Epoch 02: train_loss = 1.1723, val_acc = 0.6397, time = 8.73s
+Epoch 03: train_loss = 1.0200, val_acc = 0.6411, time = 10.52s
+Epoch 04: train_loss = 0.9312, val_acc = 0.6410, time = 9.29s
+Epoch 05: train_loss = 0.8690, val_acc = 0.7135, time = 9.06s
+Epoch 06: train_loss = 0.8244, val_acc = 0.7137, time = 9.43s
+Epoch 07: train_loss = 0.7786, val_acc = 0.7440, time = 8.98s
+Epoch 08: train_loss = 0.7430, val_acc = 0.7499, time = 8.86s
+Epoch 09: train_loss = 0.7171, val_acc = 0.7371, time = 9.25s
+Epoch 10: train_loss = 0.6893, val_acc = 0.7778, time = 9.27s
+Epoch 11: train_loss = 0.6620, val_acc = 0.7659, time = 8.72s
+Epoch 12: train_loss = 0.6395, val_acc = 0.7743, time = 10.11s
+Epoch 13: train_loss = 0.6223, val_acc = 0.7614, time = 9.17s
+Epoch 14: train_loss = 0.6012, val_acc = 0.7853, time = 9.41s
+Epoch 15: train_loss = 0.5797, val_acc = 0.7893, time = 9.32s
+Epoch 16: train_loss = 0.5592, val_acc = 0.7697, time = 9.56s
+Epoch 17: train_loss = 0.5404, val_acc = 0.7881, time = 9.01s
+Epoch 18: train_loss = 0.5258, val_acc = 0.7923, time = 8.77s
+Epoch 19: train_loss = 0.5106, val_acc = 0.7990, time = 8.58s
+Epoch 20: train_loss = 0.5008, val_acc = 0.8041, time = 8.81s
+Epoch 21: train_loss = 0.4824, val_acc = 0.7987, time = 8.94s
+Epoch 22: train_loss = 0.4782, val_acc = 0.8048, time = 9.41s
+Epoch 23: train_loss = 0.4658, val_acc = 0.8097, time = 9.09s
+Epoch 24: train_loss = 0.4598, val_acc = 0.8098, time = 9.01s
+Epoch 25: train_loss = 0.4475, val_acc = 0.8095, time = 9.19s
+Epoch 26: train_loss = 0.4443, val_acc = 0.8094, time = 9.05s
+Epoch 27: train_loss = 0.4442, val_acc = 0.8109, time = 9.08s
+Epoch 28: train_loss = 0.4376, val_acc = 0.8116, time = 8.77s
+Epoch 29: train_loss = 0.4416, val_acc = 0.8113, time = 8.77s
+Epoch 30: train_loss = 0.4374, val_acc = 0.8098, time = 9.00s
+Saved B seed 4 model to models_independent_cifar10/scheme_B/seed_4. Final val_acc=0.8098, best=0.8116
+Loading data for Scheme B (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.6283, val_acc = 0.4553, time = 8.98s
+Epoch 02: train_loss = 1.2336, val_acc = 0.5744, time = 8.79s
+Epoch 03: train_loss = 1.0913, val_acc = 0.6537, time = 8.33s
+Epoch 04: train_loss = 1.0026, val_acc = 0.6678, time = 8.82s
+Epoch 05: train_loss = 0.9394, val_acc = 0.7003, time = 8.49s
+Epoch 06: train_loss = 0.8860, val_acc = 0.6844, time = 8.75s
+Epoch 07: train_loss = 0.8402, val_acc = 0.7088, time = 8.76s
+Epoch 08: train_loss = 0.8083, val_acc = 0.7425, time = 8.77s
+Epoch 09: train_loss = 0.7727, val_acc = 0.7282, time = 8.64s
+Epoch 10: train_loss = 0.7505, val_acc = 0.7165, time = 8.63s
+Epoch 11: train_loss = 0.7184, val_acc = 0.7639, time = 8.85s
+Epoch 12: train_loss = 0.6986, val_acc = 0.7296, time = 8.57s
+Epoch 13: train_loss = 0.6670, val_acc = 0.7592, time = 8.59s
+Epoch 14: train_loss = 0.6514, val_acc = 0.7807, time = 8.64s
+Epoch 15: train_loss = 0.6302, val_acc = 0.7736, time = 8.54s
+Epoch 16: train_loss = 0.6121, val_acc = 0.7863, time = 9.29s
+Epoch 17: train_loss = 0.5944, val_acc = 0.7879, time = 8.81s
+Epoch 18: train_loss = 0.5765, val_acc = 0.7930, time = 8.67s
+Epoch 19: train_loss = 0.5648, val_acc = 0.7877, time = 8.76s
+Epoch 20: train_loss = 0.5499, val_acc = 0.7969, time = 9.06s
+Epoch 21: train_loss = 0.5418, val_acc = 0.8001, time = 9.09s
+Epoch 22: train_loss = 0.5223, val_acc = 0.7991, time = 8.65s
+Epoch 23: train_loss = 0.5147, val_acc = 0.8023, time = 8.72s
+Epoch 24: train_loss = 0.5096, val_acc = 0.8032, time = 8.66s
+Epoch 25: train_loss = 0.5021, val_acc = 0.8038, time = 8.74s
+Epoch 26: train_loss = 0.4992, val_acc = 0.8057, time = 8.48s
+Epoch 27: train_loss = 0.4938, val_acc = 0.8035, time = 9.14s
+Epoch 28: train_loss = 0.4916, val_acc = 0.8043, time = 8.72s
+Epoch 29: train_loss = 0.4901, val_acc = 0.8031, time = 8.97s
+Epoch 30: train_loss = 0.4919, val_acc = 0.8035, time = 8.85s
+Saved B seed 5 model to models_independent_cifar10/scheme_B/seed_5. Final val_acc=0.8035, best=0.8057
+Loading data for Scheme C (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.6285, val_acc = 0.4732, time = 7.72s
+Epoch 02: train_loss = 1.2605, val_acc = 0.6232, time = 7.97s
+Epoch 03: train_loss = 1.0993, val_acc = 0.6682, time = 7.77s
+Epoch 04: train_loss = 1.0035, val_acc = 0.6706, time = 8.18s
+Epoch 05: train_loss = 0.9402, val_acc = 0.7164, time = 7.74s
+Epoch 06: train_loss = 0.8873, val_acc = 0.6680, time = 7.86s
+Epoch 07: train_loss = 0.8388, val_acc = 0.6331, time = 7.82s
+Epoch 08: train_loss = 0.8063, val_acc = 0.7169, time = 7.72s
+Epoch 09: train_loss = 0.7732, val_acc = 0.7502, time = 7.72s
+Epoch 10: train_loss = 0.7451, val_acc = 0.7252, time = 8.09s
+Epoch 11: train_loss = 0.7137, val_acc = 0.7634, time = 7.99s
+Epoch 12: train_loss = 0.6878, val_acc = 0.7570, time = 7.87s
+Epoch 13: train_loss = 0.6695, val_acc = 0.7590, time = 7.96s
+Epoch 14: train_loss = 0.6483, val_acc = 0.7738, time = 7.77s
+Epoch 15: train_loss = 0.6347, val_acc = 0.7602, time = 8.28s
+Epoch 16: train_loss = 0.6094, val_acc = 0.7829, time = 7.98s
+Epoch 17: train_loss = 0.5852, val_acc = 0.7789, time = 8.07s
+Epoch 18: train_loss = 0.5747, val_acc = 0.7896, time = 7.87s
+Epoch 19: train_loss = 0.5638, val_acc = 0.7906, time = 8.41s
+Epoch 20: train_loss = 0.5429, val_acc = 0.7903, time = 9.32s
+Epoch 21: train_loss = 0.5328, val_acc = 0.7939, time = 8.76s
+Epoch 22: train_loss = 0.5258, val_acc = 0.7960, time = 8.62s
+Epoch 23: train_loss = 0.5121, val_acc = 0.8007, time = 9.06s
+Epoch 24: train_loss = 0.5043, val_acc = 0.8009, time = 9.27s
+Epoch 25: train_loss = 0.4983, val_acc = 0.8012, time = 8.68s
+Epoch 26: train_loss = 0.4872, val_acc = 0.8004, time = 8.79s
+Epoch 27: train_loss = 0.4884, val_acc = 0.8028, time = 9.05s
+Epoch 28: train_loss = 0.4849, val_acc = 0.8028, time = 8.41s
+Epoch 29: train_loss = 0.4815, val_acc = 0.8019, time = 8.06s
+Epoch 30: train_loss = 0.4794, val_acc = 0.8030, time = 8.24s
+Saved C seed 1 model to models_independent_cifar10/scheme_C/seed_1. Final val_acc=0.8030, best=0.8030
+Loading data for Scheme C (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.6720, val_acc = 0.4533, time = 8.36s
+Epoch 02: train_loss = 1.3080, val_acc = 0.5737, time = 7.96s
+Epoch 03: train_loss = 1.1616, val_acc = 0.5488, time = 8.89s
+Epoch 04: train_loss = 1.0767, val_acc = 0.6331, time = 8.50s
+Epoch 05: train_loss = 1.0165, val_acc = 0.6903, time = 8.78s
+Epoch 06: train_loss = 0.9629, val_acc = 0.7027, time = 8.79s
+Epoch 07: train_loss = 0.9269, val_acc = 0.6899, time = 8.83s
+Epoch 08: train_loss = 0.8877, val_acc = 0.6896, time = 8.74s
+Epoch 09: train_loss = 0.8557, val_acc = 0.7401, time = 8.66s
+Epoch 10: train_loss = 0.8237, val_acc = 0.7344, time = 8.63s
+Epoch 11: train_loss = 0.8096, val_acc = 0.7483, time = 8.61s
+Epoch 12: train_loss = 0.7805, val_acc = 0.7283, time = 8.67s
+Epoch 13: train_loss = 0.7580, val_acc = 0.7604, time = 8.66s
+Epoch 14: train_loss = 0.7340, val_acc = 0.7568, time = 8.11s
+Epoch 15: train_loss = 0.7221, val_acc = 0.7549, time = 8.00s
+Epoch 16: train_loss = 0.7026, val_acc = 0.7556, time = 7.88s
+Epoch 17: train_loss = 0.6894, val_acc = 0.7681, time = 7.64s
+Epoch 18: train_loss = 0.6734, val_acc = 0.7748, time = 7.77s
+Epoch 19: train_loss = 0.6537, val_acc = 0.7782, time = 7.93s
+Epoch 20: train_loss = 0.6448, val_acc = 0.7782, time = 8.23s
+Epoch 21: train_loss = 0.6317, val_acc = 0.7781, time = 7.81s
+Epoch 22: train_loss = 0.6198, val_acc = 0.7876, time = 7.98s
+Epoch 23: train_loss = 0.6034, val_acc = 0.7867, time = 8.02s
+Epoch 24: train_loss = 0.6056, val_acc = 0.7873, time = 7.69s
+Epoch 25: train_loss = 0.5973, val_acc = 0.7869, time = 7.99s
+Epoch 26: train_loss = 0.5911, val_acc = 0.7866, time = 8.02s
+Epoch 27: train_loss = 0.5886, val_acc = 0.7872, time = 7.83s
+Epoch 28: train_loss = 0.5835, val_acc = 0.7887, time = 7.71s
+Epoch 29: train_loss = 0.5811, val_acc = 0.7884, time = 7.70s
+Epoch 30: train_loss = 0.5790, val_acc = 0.7872, time = 8.09s
+Saved C seed 2 model to models_independent_cifar10/scheme_C/seed_2. Final val_acc=0.7872, best=0.7887
+Loading data for Scheme C (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.6037, val_acc = 0.5464, time = 8.04s
+Epoch 02: train_loss = 1.2255, val_acc = 0.6031, time = 7.81s
+Epoch 03: train_loss = 1.0735, val_acc = 0.6377, time = 8.18s
+Epoch 04: train_loss = 0.9855, val_acc = 0.6986, time = 8.20s
+Epoch 05: train_loss = 0.9219, val_acc = 0.6999, time = 8.16s
+Epoch 06: train_loss = 0.8645, val_acc = 0.7233, time = 7.88s
+Epoch 07: train_loss = 0.8256, val_acc = 0.7240, time = 7.65s
+Epoch 08: train_loss = 0.7896, val_acc = 0.7036, time = 8.30s
+Epoch 09: train_loss = 0.7630, val_acc = 0.7351, time = 8.47s
+Epoch 10: train_loss = 0.7287, val_acc = 0.7460, time = 7.92s
+Epoch 11: train_loss = 0.7047, val_acc = 0.7617, time = 7.76s
+Epoch 12: train_loss = 0.6769, val_acc = 0.7503, time = 8.15s
+Epoch 13: train_loss = 0.6534, val_acc = 0.7621, time = 8.02s
+Epoch 14: train_loss = 0.6265, val_acc = 0.7718, time = 8.05s
+Epoch 15: train_loss = 0.6091, val_acc = 0.7786, time = 8.11s
+Epoch 16: train_loss = 0.5931, val_acc = 0.7796, time = 7.90s
+Epoch 17: train_loss = 0.5730, val_acc = 0.7787, time = 7.96s
+Epoch 18: train_loss = 0.5540, val_acc = 0.7850, time = 8.04s
+Epoch 19: train_loss = 0.5424, val_acc = 0.7842, time = 8.11s
+Epoch 20: train_loss = 0.5304, val_acc = 0.7899, time = 8.03s
+Epoch 21: train_loss = 0.5113, val_acc = 0.7969, time = 8.02s
+Epoch 22: train_loss = 0.5021, val_acc = 0.7923, time = 8.27s
+Epoch 23: train_loss = 0.4901, val_acc = 0.7969, time = 8.04s
+Epoch 24: train_loss = 0.4823, val_acc = 0.7969, time = 8.39s
+Epoch 25: train_loss = 0.4753, val_acc = 0.7983, time = 8.01s
+Epoch 26: train_loss = 0.4755, val_acc = 0.8001, time = 8.26s
+Epoch 27: train_loss = 0.4683, val_acc = 0.7993, time = 8.16s
+Epoch 28: train_loss = 0.4684, val_acc = 0.8000, time = 8.78s
+Epoch 29: train_loss = 0.4624, val_acc = 0.8014, time = 8.07s
+Epoch 30: train_loss = 0.4651, val_acc = 0.7993, time = 7.80s
+Saved C seed 3 model to models_independent_cifar10/scheme_C/seed_3. Final val_acc=0.7993, best=0.8014
+Loading data for Scheme C (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.5753, val_acc = 0.5174, time = 8.29s
+Epoch 02: train_loss = 1.2334, val_acc = 0.6106, time = 8.27s
+Epoch 03: train_loss = 1.0738, val_acc = 0.6646, time = 8.24s
+Epoch 04: train_loss = 0.9648, val_acc = 0.6577, time = 8.36s
+Epoch 05: train_loss = 0.8887, val_acc = 0.6914, time = 8.18s
+Epoch 06: train_loss = 0.8401, val_acc = 0.7342, time = 8.23s
+Epoch 07: train_loss = 0.7906, val_acc = 0.7340, time = 8.33s
+Epoch 08: train_loss = 0.7617, val_acc = 0.7501, time = 8.21s
+Epoch 09: train_loss = 0.7214, val_acc = 0.7660, time = 8.37s
+Epoch 10: train_loss = 0.6878, val_acc = 0.7587, time = 8.21s
+Epoch 11: train_loss = 0.6685, val_acc = 0.7573, time = 8.41s
+Epoch 12: train_loss = 0.6413, val_acc = 0.7556, time = 8.33s
+Epoch 13: train_loss = 0.6164, val_acc = 0.7717, time = 8.09s
+Epoch 14: train_loss = 0.5966, val_acc = 0.7581, time = 7.91s
+Epoch 15: train_loss = 0.5791, val_acc = 0.7544, time = 7.77s
+Epoch 16: train_loss = 0.5569, val_acc = 0.7927, time = 7.95s
+Epoch 17: train_loss = 0.5387, val_acc = 0.7913, time = 7.94s
+Epoch 18: train_loss = 0.5182, val_acc = 0.7899, time = 8.28s
+Epoch 19: train_loss = 0.5050, val_acc = 0.7978, time = 7.70s
+Epoch 20: train_loss = 0.4888, val_acc = 0.7949, time = 8.09s
+Epoch 21: train_loss = 0.4792, val_acc = 0.7984, time = 8.29s
+Epoch 22: train_loss = 0.4684, val_acc = 0.8016, time = 7.85s
+Epoch 23: train_loss = 0.4549, val_acc = 0.8047, time = 7.81s
+Epoch 24: train_loss = 0.4459, val_acc = 0.8044, time = 8.84s
+Epoch 25: train_loss = 0.4426, val_acc = 0.8060, time = 7.83s
+Epoch 26: train_loss = 0.4337, val_acc = 0.8064, time = 7.83s
+Epoch 27: train_loss = 0.4335, val_acc = 0.8089, time = 7.57s
+Epoch 28: train_loss = 0.4250, val_acc = 0.8082, time = 7.69s
+Epoch 29: train_loss = 0.4257, val_acc = 0.8107, time = 7.83s
+Epoch 30: train_loss = 0.4273, val_acc = 0.8086, time = 7.98s
+Saved C seed 4 model to models_independent_cifar10/scheme_C/seed_4. Final val_acc=0.8086, best=0.8107
+Loading data for Scheme C (cifar10)...
+Independent initialization (no weight sharing from Scheme A).
+Starting training for 30 epochs.
+Epoch 01: train_loss = 1.6732, val_acc = 0.4277, time = 7.93s
+Epoch 02: train_loss = 1.2825, val_acc = 0.6100, time = 7.76s
+Epoch 03: train_loss = 1.1233, val_acc = 0.6621, time = 8.02s
+Epoch 04: train_loss = 1.0165, val_acc = 0.6921, time = 8.22s
+Epoch 05: train_loss = 0.9476, val_acc = 0.6709, time = 7.73s
+Epoch 06: train_loss = 0.8953, val_acc = 0.7297, time = 7.76s
+Epoch 07: train_loss = 0.8439, val_acc = 0.7172, time = 7.79s
+Epoch 08: train_loss = 0.8113, val_acc = 0.7046, time = 7.85s
+Epoch 09: train_loss = 0.7814, val_acc = 0.7514, time = 7.91s
+Epoch 10: train_loss = 0.7503, val_acc = 0.7411, time = 8.01s
+Epoch 11: train_loss = 0.7290, val_acc = 0.7463, time = 8.02s
+Epoch 12: train_loss = 0.7015, val_acc = 0.7664, time = 7.76s
+Epoch 13: train_loss = 0.6737, val_acc = 0.7813, time = 7.89s
+Epoch 14: train_loss = 0.6590, val_acc = 0.7799, time = 7.57s
+Epoch 15: train_loss = 0.6341, val_acc = 0.7682, time = 7.77s
+Epoch 16: train_loss = 0.6153, val_acc = 0.7767, time = 7.79s
+Epoch 17: train_loss = 0.6026, val_acc = 0.7889, time = 7.50s
+Epoch 18: train_loss = 0.5907, val_acc = 0.7919, time = 7.93s
+Epoch 19: train_loss = 0.5693, val_acc = 0.7958, time = 8.15s
+Epoch 20: train_loss = 0.5563, val_acc = 0.7901, time = 7.75s
+Epoch 21: train_loss = 0.5453, val_acc = 0.8030, time = 7.67s
+Epoch 22: train_loss = 0.5353, val_acc = 0.8000, time = 7.81s
+Epoch 23: train_loss = 0.5235, val_acc = 0.8004, time = 7.84s
+Epoch 24: train_loss = 0.5157, val_acc = 0.8033, time = 7.92s
+Epoch 25: train_loss = 0.5080, val_acc = 0.8047, time = 8.26s
+Epoch 26: train_loss = 0.5036, val_acc = 0.8052, time = 7.96s
+Epoch 27: train_loss = 0.5002, val_acc = 0.8064, time = 8.46s
+Epoch 28: train_loss = 0.4969, val_acc = 0.8058, time = 7.82s
+Epoch 29: train_loss = 0.4952, val_acc = 0.8049, time = 7.93s
+Epoch 30: train_loss = 0.4915, val_acc = 0.8060, time = 7.85s
+Saved C seed 5 model to models_independent_cifar10/scheme_C/seed_5. Final val_acc=0.8060, best=0.8064
+
+=== Training Scheme A, Seed 1 (independent init) ===
+
+=== Training Scheme A, Seed 2 (independent init) ===
+
+=== Training Scheme A, Seed 3 (independent init) ===
+
+=== Training Scheme A, Seed 4 (independent init) ===
+
+=== Training Scheme A, Seed 5 (independent init) ===
+
+=== Training Scheme B, Seed 1 (independent init) ===
+
+=== Training Scheme B, Seed 2 (independent init) ===
+
+=== Training Scheme B, Seed 3 (independent init) ===
+
+=== Training Scheme B, Seed 4 (independent init) ===
+
+=== Training Scheme B, Seed 5 (independent init) ===
+
+=== Training Scheme C, Seed 1 (independent init) ===
+
+=== Training Scheme C, Seed 2 (independent init) ===
+
+=== Training Scheme C, Seed 3 (independent init) ===
+
+=== Training Scheme C, Seed 4 (independent init) ===
+
+=== Training Scheme C, Seed 5 (independent init) ===
+
+=== ALL TRAINING COMPLETE ===

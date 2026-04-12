@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grue Viewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0f14;
+            --panel: #101821;
+            --panel-2: #14202c;
+            --border: #223244;
+            --text: #eaf2fb;
+            --muted: #93a5b9;
+            --accent: #6ec1ff;
+            --accent-2: #59e1c0;
+            --danger: #ff798a;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: radial-gradient(circle at top, rgba(110,193,255,0.12), transparent 25%), var(--bg);
+            color: var(--text);
+            font-family: Inter, sans-serif;
+        }
+        .wrap {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        .top {
+            display: grid;
+            grid-template-columns: 320px 320px 220px 1fr;
+            gap: 12px;
+            align-items: end;
+            margin-bottom: 16px;
+        }
+        .box, .viewer, .summary, .layer-panel {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+        .box {
+            padding: 14px;
+        }
+        label {
+            display: block;
+            color: var(--muted);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 8px;
+        }
+        select, button, input[type="range"] {
+            width: 100%;
+        }
+        select, button {
+            padding: 11px 12px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: var(--panel-2);
+            color: var(--text);
+            font: inherit;
+        }
+        button {
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .controls {
+            display: grid;
+            grid-template-columns: 220px 140px 1fr 160px;
+            gap: 12px;
+            align-items: end;
+            margin-bottom: 16px;
+        }
+        .summary {
+            padding: 16px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .stat {
+            background: var(--panel-2);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px;
+        }
+        .stat .k {
+            color: var(--muted);
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        .stat .v {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .viewer {
+            padding: 16px;
+        }
+        .predictions {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .pred-card {
+            background: var(--panel-2);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px;
+        }
+        .pred-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 90px 1fr 54px;
+            gap: 8px;
+            align-items: center;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        .track {
+            height: 8px;
+            border-radius: 999px;
+            background: #0d141b;
+            overflow: hidden;
+        }
+        .fill {
+            height: 100%;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        }
+        .fill.warn {
+            background: linear-gradient(90deg, #ff9b6e, var(--danger));
+        }
+        .layer-header {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .layer-header select {
+            max-width: 220px;
+        }
+        .layer-meta {
+            color: var(--muted);
+            font-size: 13px;
+        }
+        .canvases {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .canvas-card {
+            background: var(--panel-2);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px;
+        }
+        .canvas-card h4 {
+            margin: 0 0 10px 0;
+            font-size: 13px;
+            color: var(--muted);
+        }
+        canvas {
+            width: 100%;
+            min-height: 220px;
+            border-radius: 10px;
+            background: #0b1218;
+            display: block;
+        }
+        .layer-panel {
+            padding: 16px;
+        }
+        .tables {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px 6px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        th {
+            color: var(--muted);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .mono { font-family: "IBM Plex Mono", monospace; }
+        .status { color: var(--muted); font-size: 13px; }
+        .hint { color: var(--muted); font-size: 13px; line-height: 1.5; }
+        @media (max-width: 1100px) {
+            .top, .controls, .summary, .predictions, .canvases, .tables { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div style="margin-bottom: 16px;">
+            <div style="color: var(--accent); font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em;">Simple Viewer</div>
+            <h1 style="margin: 6px 0 8px 0;">Compare two models like a latent inspector</h1>
+            <div class="hint">Pick two models, upload an image, inspect one layer at a time, and optionally try a subtraction preview.</div>
+        </div>
+
+        <div class="top">
+            <div class="box">
+                <label>Model A</label>
+                <select id="model-a"></select>
+            </div>
+            <div class="box">
+                <label>Model B</label>
+                <select id="model-b"></select>
+            </div>
+            <div class="box">
+                <label>Image</label>
+                <input id="image-input" type="file" accept="image/*">
+            </div>
+            <div class="box">
+                <label>Status</label>
+                <div id="status" class="status">Ready.</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="box">
+                <label>Subtraction</label>
+                <select id="subtract-mode">
+                    <option value="none">No subtraction</option>
+                    <option value="a_minus_b_on_b">Inject (B - A) into B</option>
+                    <option value="a_minus_b_on_a">Inject (A - B) into A</option>
+                </select>
+            </div>
+            <div class="box">
+                <label>Alpha</label>
+                <div class="mono" id="alpha-value">0.25</div>
+            </div>
+            <div class="box">
+                <label>Alpha slider</label>
+                <input id="alpha" type="range" min="0" max="1.5" step="0.05" value="0.25">
+            </div>
+            <div class="box">
+                <label>&nbsp;</label>
+                <button id="run">Compare</button>
+            </div>
+        </div>
+
+        <div id="summary" class="summary" style="display:none;"></div>
+
+        <div id="viewer" class="viewer" style="display:none;">
+            <div class="predictions" id="predictions"></div>
+
+            <div class="layer-header">
+                <strong>Layer</strong>
+                <select id="layer-select"></select>
+                <div class="layer-meta" id="layer-meta"></div>
+            </div>
+
+            <div class="canvases">
+                <div class="canvas-card">
+                    <h4>Model A</h4>
+                    <canvas id="canvas-a"></canvas>
+                </div>
+                <div class="canvas-card">
+                    <h4>Model B</h4>
+                    <canvas id="canvas-b"></canvas>
+                </div>
+                <div class="canvas-card">
+                    <h4>Difference</h4>
+                    <canvas id="canvas-diff"></canvas>
+                </div>
+            </div>
+
+            <div class="layer-panel">
+                <div class="tables">
+                    <div>
+                        <label>Top changed units</label>
+                        <table id="changed-table"></table>
+                    </div>
+                    <div>
+                        <label>Top null-zone units</label>
+                        <table id="null-table"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+const modelA = document.getElementById("model-a");
+const modelB = document.getElementById("model-b");
+const imageInput = document.getElementById("image-input");
+const subtractMode = document.getElementById("subtract-mode");
+const alpha = document.getElementById("alpha");
+const alphaValue = document.getElementById("alpha-value");
+const run = document.getElementById("run");
+const statusEl = document.getElementById("status");
+const summaryEl = document.getElementById("summary");
+const viewerEl = document.getElementById("viewer");
+const predictionsEl = document.getElementById("predictions");
+const layerSelect = document.getElementById("layer-select");
+const layerMeta = document.getElementById("layer-meta");
+const changedTable = document.getElementById("changed-table");
+const nullTable = document.getElementById("null-table");
+
+let models = [];
+let imagePixels = null;
+let resultData = null;
+
+alpha.addEventListener("input", () => {
+    alphaValue.textContent = Number(alpha.value).toFixed(2);
+});
+
+async function init() {
+    const res = await fetch("/models");
+    models = await res.json();
+    [modelA, modelB].forEach((select) => {
+        models.forEach((m) => {
+            const opt = document.createElement("option");
+            opt.value = m.id;
+            opt.textContent = m.label;
+            select.appendChild(opt);
+        });
+    });
+    const a = models.find((m) => m.base_dir === "models_cifar10" && m.scheme === "A" && m.seed === 1);
+    const b = models.find((m) => m.base_dir === "models_cifar10" && m.scheme === "B" && m.seed === 1);
+    if (a) modelA.value = a.id;
+    if (b) modelB.value = b.id;
+}
+
+function selectedModelSize() {
+    const found = models.find((m) => m.id === modelA.value);
+    return found ? found.input_size : 32;
+}
+
+imageInput.addEventListener("change", () => {
+    const file = imageInput.files[0];
+    if (!file) return;
+    const size = selectedModelSize();
+    const reader = new FileReader();
+    reader.onload = (e) => {
+        const img = new Image();
+        img.onload = () => {
+            const canvas = document.createElement("canvas");
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0, size, size);
+            const data = ctx.getImageData(0, 0, size, size).data;
+            imagePixels = [];
+            for (let i = 0; i < data.length; i += 4) {
+                imagePixels.push([data[i] / 255, data[i + 1] / 255, data[i + 2] / 255]);
+            }
+            statusEl.textContent = `Loaded image at ${size}x${size}.`;
+        };
+        img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+});
+
+run.addEventListener("click", async () => {
+    if (!imagePixels) {
+        alert("Upload an image first.");
+        return;
+    }
+    statusEl.textContent = "Running comparison...";
+    const res = await fetch("/compare", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            model_a: modelA.value,
+            model_b: modelB.value,
+            image: imagePixels,
+            subtraction_mode: subtractMode.value,
+            alpha: Number(alpha.value)
+        })
+    });
+    const data = await res.json();
+    if (data.error) {
+        statusEl.textContent = `Error: ${data.error}`;
+        console.error(data.trace);
+        return;
+    }
+    resultData = data;
+    statusEl.textContent = "Done.";
+    renderSummary(data);
+    renderPredictions(data);
+    renderLayerOptions(data);
+    renderCurrentLayer();
+    summaryEl.style.display = "grid";
+    viewerEl.style.display = "block";
+});
+
+layerSelect.addEventListener("change", renderCurrentLayer);
+
+function fmt(value, digits = 4) {
+    if (value === null || value === undefined || Number.isNaN(value)) return "n/a";
+    return Number(value).toFixed(digits);
+}
+
+function renderSummary(data) {
+    const first = data.layer_order[0];
+    const topNull = data.null_zone_ranking[0];
+    const weightTop = [...data.weight_summary].sort((a, b) => (b.delta_norm || 0) - (a.delta_norm || 0))[0];
+    const subtractionTop = data.subtraction ? data.subtraction.prediction[0].label : "off";
+    summaryEl.innerHTML = `
+        <div class="stat"><div class="k">A top label</div><div class="v">${data.models.a.prediction[0].label}</div></div>
+        <div class="stat"><div class="k">B top label</div><div class="v">${data.models.b.prediction[0].label}</div></div>
+        <div class="stat"><div class="k">Strongest weight delta</div><div class="v">${weightTop ? weightTop.layer : "n/a"}</div></div>
+        <div class="stat"><div class="k">Top null candidate</div><div class="v">${topNull ? `${topNull.layer}:${topNull.index}` : "n/a"}</div></div>
+        <div class="stat"><div class="k">First layer delta</div><div class="v">${fmt(data.layers[first].stats.delta_l2, 2)}</div></div>
+        <div class="stat"><div class="k">First layer cosine</div><div class="v">${fmt(data.layers[first].stats.cosine_similarity, 2)}</div></div>
+        <div class="stat"><div class="k">Subtraction mode</div><div class="v">${subtractMode.value === "none" ? "off" : "on"}</div></div>
+        <div class="stat"><div class="k">Subtracted top label</div><div class="v">${subtractionTop}</div></div>
+    `;
+}
+
+function predictionCard(title, pred, warn = false) {
+    const rows = pred.map((item) => `
+        <div class="row">
+            <div>${item.label}</div>
+            <div class="track"><div class="fill ${warn ? "warn" : ""}" style="width:${Math.max(item.probability * 100, 1)}%"></div></div>
+            <div class="mono">${(item.probability * 100).toFixed(1)}%</div>
+        </div>
+    `).join("");
+    return `<div class="pred-card"><h3>${title}</h3>${rows}</div>`;
+}
+
+function renderPredictions(data) {
+    predictionsEl.innerHTML = [
+        predictionCard("Model A", data.models.a.prediction),
+        predictionCard("Model B", data.models.b.prediction),
+        predictionCard(data.subtraction ? "Subtracted" : "Subtraction off", data.subtraction ? data.subtraction.prediction : [{ label: "off", probability: 0, logit: 0 }], true)
+    ].join("");
+}
+
+function renderLayerOptions(data) {
+    layerSelect.innerHTML = "";
+    data.layer_order.forEach((name) => {
+        const opt = document.createElement("option");
+        opt.value = name;
+        opt.textContent = name;
+        layerSelect.appendChild(opt);
+    });
+}
+
+function renderCurrentLayer() {
+    if (!resultData) return;
+    const name = layerSelect.value || resultData.layer_order[0];
+    const layer = resultData.layers[name];
+    layerMeta.textContent = `|delta| ${fmt(layer.stats.delta_l2)} | cosine ${fmt(layer.stats.cosine_similarity)} | null mass ${fmt(layer.stats.null_zone_mass)}${layer.stats.shape_mismatch ? " | shape mismatch" : ""}`;
+
+    if (layer.preview_a.kind === "conv") {
+        drawHeatmap(document.getElementById("canvas-a"), layer.preview_a.mean_map, "positive");
+        drawHeatmap(document.getElementById("canvas-b"), layer.preview_b.mean_map, "positive");
+        const diffMap = layer.preview_a.mean_map.map((row, y) => row.map((v, x) => v - layer.preview_b.mean_map[y][x]));
+        drawHeatmap(document.getElementById("canvas-diff"), diffMap, "signed");
+    } else {
+        drawBars(document.getElementById("canvas-a"), layer.preview_a.values);
+        drawBars(document.getElementById("canvas-b"), layer.preview_b.values);
+        drawBars(document.getElementById("canvas-diff"), layer.diff_vector, true);
+    }
+
+    changedTable.innerHTML = tableMarkup(layer.top_changed_units);
+    nullTable.innerHTML = tableMarkup(layer.top_null_zone_units);
+}
+
+function tableMarkup(rows) {
+    const body = rows.slice(0, 8).map((row) => `
+        <tr>
+            <td class="mono">${row.index}</td>
+            <td class="mono">${fmt(row.delta)}</td>
+            <td class="mono">${fmt(row.null_score)}</td>
+        </tr>
+    `).join("");
+    return `
+        <thead><tr><th>Unit</th><th>Delta</th><th>Null score</th></tr></thead>
+        <tbody>${body}</tbody>
+    `;
+}
+
+function drawHeatmap(canvas, matrix, mode) {
+    const ctx = canvas.getContext("2d");
+    const h = matrix.length;
+    const w = matrix[0].length;
+    canvas.width = w;
+    canvas.height = h;
+    const img = ctx.createImageData(w, h);
+    let maxAbs = 1e-6;
+    matrix.forEach((row) => row.forEach((v) => { maxAbs = Math.max(maxAbs, Math.abs(v)); }));
+    for (let y = 0; y < h; y++) {
+        for (let x = 0; x < w; x++) {
+            const i = (y * w + x) * 4;
+            const v = matrix[y][x];
+            if (mode === "positive") {
+                const t = Math.max(0, v / maxAbs);
+                img.data[i] = 20 + Math.floor(90 * t);
+                img.data[i + 1] = 50 + Math.floor(170 * t);
+                img.data[i + 2] = 70 + Math.floor(180 * t);
+                img.data[i + 3] = 255;
+            } else {
+                const t = Math.max(-1, Math.min(1, v / maxAbs));
+                if (t >= 0) {
+                    img.data[i] = 70;
+                    img.data[i + 1] = 110 + Math.floor(100 * t);
+                    img.data[i + 2] = 160 + Math.floor(70 * t);
+                } else {
+                    img.data[i] = 170 + Math.floor(80 * -t);
+                    img.data[i + 1] = 60 + Math.floor(30 * -t);
+                    img.data[i + 2] = 80 + Math.floor(20 * -t);
+                }
+                img.data[i + 3] = 255;
+            }
+        }
+    }
+    ctx.putImageData(img, 0, 0);
+}
+
+function drawBars(canvas, values, signed = false) {
+    const ctx = canvas.getContext("2d");
+    canvas.width = 600;
+    canvas.height = 240;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const maxAbs = Math.max(...values.map((v) => Math.abs(v)), 1e-6);
+    const mid = canvas.height / 2;
+    const barW = Math.max(1, canvas.width / values.length);
+    if (signed) {
+        ctx.strokeStyle = "rgba(255,255,255,0.12)";
+        ctx.beginPath();
+        ctx.moveTo(0, mid);
+        ctx.lineTo(canvas.width, mid);
+        ctx.stroke();
+    }
+    values.forEach((value, idx) => {
+        const h = (Math.abs(value) / maxAbs) * (signed ? canvas.height * 0.42 : canvas.height * 0.9);
+        ctx.fillStyle = signed ? (value >= 0 ? "#6ec1ff" : "#ff798a") : "#6ec1ff";
+        if (signed) {
+            ctx.fillRect(idx * barW, value >= 0 ? mid - h : mid, Math.max(1, barW - 1), h);
+        } else {
+            ctx.fillRect(idx * barW, canvas.height - h, Math.max(1, barW - 1), h);
+        }
+    });
+}
+
+init();
+</script>
+</body>
+</html>

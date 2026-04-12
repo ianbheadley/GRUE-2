@@ -1,0 +1,208 @@
+{
+  "color_blocks": {
+    "dataset": "color_blocks",
+    "hidden_task": "blue_vs_green",
+    "schemes": {
+      "A": {
+        "probe_accuracy_mean": 0.9955,
+        "probe_accuracy_std": 0.0014999999999999903,
+        "blue_nearest_centroid_mean": {
+          "black": 0.076,
+          "blue": 0.905,
+          "brown": 0.0,
+          "green": 0.008000000000000002,
+          "grey": 0.0005,
+          "orange": 0.0,
+          "pink": 0.0,
+          "purple": 0.0105,
+          "red": 0.0,
+          "white": 0.0,
+          "yellow": 0.0
+        },
+        "green_nearest_centroid_mean": {
+          "black": 0.075,
+          "blue": 0.0015,
+          "brown": 0.0,
+          "green": 0.905,
+          "grey": 0.0,
+          "orange": 0.0,
+          "pink": 0.0,
+          "purple": 0.0,
+          "red": 0.0,
+          "white": 0.0,
+          "yellow": 0.0185
+        }
+      },
+      "B": {
+        "probe_accuracy_mean": 0.98225,
+        "probe_accuracy_std": 0.009663074045043853,
+        "blue_nearest_centroid_mean": {
+          "black": 0.072,
+          "brown": 0.0,
+          "grey": 0.0,
+          "grue": 0.8644999999999999,
+          "orange": 0.0,
+          "pink": 0.0,
+          "purple": 0.0635,
+          "red": 0.0,
+          "white": 0.0,
+          "yellow": 0.0
+        },
+        "green_nearest_centroid_mean": {
+          "black": 0.05500000000000001,
+          "brown": 0.0,
+          "grey": 0.0015,
+          "grue": 0.8535,
+          "orange": 0.0,
+          "pink": 0.0,
+          "purple": 0.0015,
+          "red": 0.0,
+          "white": 0.0,
+          "yellow": 0.0885
+        }
+      },
+      "C": {
+        "probe_accuracy_mean": 0.9865,
+        "probe_accuracy_std": 0.0038242646351946187,
+        "blue_nearest_centroid_mean": {
+          "black": 0.063,
+          "brown": 0.0,
+          "green": 0.27999999999999997,
+          "grey": 0.0,
+          "orange": 0.0,
+          "pink": 0.0,
+          "purple": 0.641,
+          "red": 0.0,
+          "white": 0.0155,
+          "yellow": 0.0005
+        },
+        "green_nearest_centroid_mean": {
+          "black": 0.0665,
+          "brown": 0.0,
+          "green": 0.8210000000000001,
+          "grey": 0.025500000000000002,
+          "orange": 0.0,
+          "pink": 0.0,
+          "purple": 0.0,
+          "red": 0.0,
+          "white": 0.0,
+          "yellow": 0.087
+        }
+      }
+    },
+    "alignment": {
+      "A_vs_B_hidden_direction": {
+        "mean_cosine": 0.4011928290128708,
+        "std_cosine": 0.1848844573699321
+      },
+      "A_vs_C_hidden_direction": {
+        "mean_cosine": 0.4725811004638672,
+        "std_cosine": 0.15625029260570455
+      },
+      "B_vs_C_hidden_direction": {
+        "mean_cosine": 0.402979189157486,
+        "std_cosine": 0.09380999268827617
+      }
+    }
+  },
+  "cifar10": {
+    "dataset": "cifar10",
+    "hidden_task": "automobile_vs_truck",
+    "schemes": {
+      "A": {
+        "probe_accuracy_mean": 0.9192499999999999,
+        "probe_accuracy_std": 0.004513867521316937,
+        "automobile_nearest_centroid_mean": {
+          "airplane": 0.056499999999999995,
+          "automobile": 0.8065000000000001,
+          "bird": 0.0015,
+          "cat": 0.025500000000000002,
+          "deer": 0.0055,
+          "dog": 0.003,
+          "frog": 0.0005,
+          "horse": 0.002,
+          "ship": 0.023,
+          "truck": 0.07599999999999998
+        },
+        "truck_nearest_centroid_mean": {
+          "airplane": 0.05299999999999999,
+          "automobile": 0.0475,
+          "bird": 0.0055000000000000005,
+          "cat": 0.061,
+          "deer": 0.003,
+          "dog": 0.0045000000000000005,
+          "frog": 0.0055,
+          "horse": 0.0035000000000000005,
+          "ship": 0.029000000000000005,
+          "truck": 0.7874999999999999
+        }
+      },
+      "B": {
+        "probe_accuracy_mean": 0.7625,
+        "probe_accuracy_std": 0.05314484923301597,
+        "automobile_nearest_centroid_mean": {
+          "airplane": 0.049,
+          "bird": 0.003,
+          "cat": 0.032,
+          "deer": 0.004,
+          "dog": 0.003,
+          "frog": 0.002,
+          "horse": 0.006,
+          "motor_vehicle": 0.8615,
+          "ship": 0.03949999999999999
+        },
+        "truck_nearest_centroid_mean": {
+          "airplane": 0.077,
+          "bird": 0.007000000000000001,
+          "cat": 0.0715,
+          "deer": 0.0035000000000000005,
+          "dog": 0.006500000000000001,
+          "frog": 0.007000000000000001,
+          "horse": 0.0095,
+          "motor_vehicle": 0.775,
+          "ship": 0.043
+        }
+      },
+      "C": {
+        "probe_accuracy_mean": 0.82125,
+        "probe_accuracy_std": 0.01003120132386947,
+        "automobile_nearest_centroid_mean": {
+          "airplane": 0.08249999999999999,
+          "automobile": 0.8215,
+          "bird": 0.0015,
+          "cat": 0.028500000000000004,
+          "deer": 0.0085,
+          "dog": 0.007000000000000001,
+          "frog": 0.005,
+          "horse": 0.0015,
+          "ship": 0.044
+        },
+        "truck_nearest_centroid_mean": {
+          "airplane": 0.319,
+          "automobile": 0.362,
+          "bird": 0.018,
+          "cat": 0.132,
+          "deer": 0.014500000000000002,
+          "dog": 0.014499999999999999,
+          "frog": 0.015500000000000003,
+          "horse": 0.008,
+          "ship": 0.1165
+        }
+      }
+    },
+    "alignment": {
+      "A_vs_B_hidden_direction": {
+        "mean_cosine": 0.5903301239013672,
+        "std_cosine": 0.12671614294151487
+      },
+      "A_vs_C_hidden_direction": {
+        "mean_cosine": 0.6317805469036102,
+        "std_cosine": 0.1323286814723751
+      },
+      "B_vs_C_hidden_direction": {
+        "mean_cosine": 0.6414618730545044,
+        "std_cosine": 0.2310844532291554
+      }
+    }
+  }
+}

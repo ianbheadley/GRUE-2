@@ -1,0 +1,121 @@
+Starting rigorous Grue Training Matrix
+Training Scheme A, Seed 1
+Loading data for Scheme A...
+Starting training for 5 epochs.
+Epoch 01: train_loss = 0.2218, val_acc = 0.9466, time = 16.35s
+Epoch 02: train_loss = 0.0939, val_acc = 0.9563, time = 16.07s
+Epoch 03: train_loss = 0.0716, val_acc = 0.9796, time = 16.08s
+Epoch 04: train_loss = 0.0646, val_acc = 0.9669, time = 16.49s
+Epoch 05: train_loss = 0.0579, val_acc = 0.9793, time = 16.49s
+Saved A seed 1 model to models/scheme_A/seed_1.
+Training Scheme B, Seed 1
+Loading data for Scheme B...
+Loading matching Scheme A initialization from models/scheme_A/seed_1/weights.safetensors...
+Starting training for 5 epochs.
+Epoch 01: train_loss = 0.1486, val_acc = 0.9685, time = 16.22s
+Epoch 02: train_loss = 0.0612, val_acc = 0.9847, time = 15.51s
+Epoch 03: train_loss = 0.0500, val_acc = 0.9843, time = 16.29s
+Epoch 04: train_loss = 0.0465, val_acc = 0.9765, time = 17.51s
+Epoch 05: train_loss = 0.0390, val_acc = 0.9872, time = 16.08s
+Saved B seed 1 model to models/scheme_B/seed_1.
+Training Scheme A, Seed 2
+Loading data for Scheme A...
+Starting training for 5 epochs.
+Epoch 01: train_loss = 0.2400, val_acc = 0.9542, time = 16.00s
+Epoch 02: train_loss = 0.0971, val_acc = 0.9833, time = 15.63s
+Epoch 03: train_loss = 0.0744, val_acc = 0.9853, time = 15.97s
+Epoch 04: train_loss = 0.0647, val_acc = 0.9756, time = 15.47s
+Epoch 05: train_loss = 0.0514, val_acc = 0.9851, time = 15.70s
+Saved A seed 2 model to models/scheme_A/seed_2.
+Training Scheme B, Seed 2
+Loading data for Scheme B...
+Loading matching Scheme A initialization from models/scheme_A/seed_2/weights.safetensors...
+Starting training for 5 epochs.
+Epoch 01: train_loss = 0.1642, val_acc = 0.9644, time = 17.12s
+Epoch 02: train_loss = 0.0567, val_acc = 0.9897, time = 15.40s
+Epoch 03: train_loss = 0.0463, val_acc = 0.9855, time = 15.49s
+Epoch 04: train_loss = 0.0435, val_acc = 0.9864, time = 16.59s
+Epoch 05: train_loss = 0.0353, val_acc = 0.9849, time = 15.73s
+Saved B seed 2 model to models/scheme_B/seed_2.
+Training Scheme A, Seed 3
+Loading data for Scheme A...
+Starting training for 5 epochs.
+Epoch 01: train_loss = 0.2904, val_acc = 0.9728, time = 15.41s
+Epoch 02: train_loss = 0.0933, val_acc = 0.9773, time = 15.21s
+Epoch 03: train_loss = 0.0842, val_acc = 0.9685, time = 15.64s
+Epoch 04: train_loss = 0.0709, val_acc = 0.9863, time = 15.26s
+Epoch 05: train_loss = 0.0616, val_acc = 0.9804, time = 15.42s
+Saved A seed 3 model to models/scheme_A/seed_3.
+Training Scheme B, Seed 3
+Loading data for Scheme B...
+Loading matching Scheme A initialization from models/scheme_A/seed_3/weights.safetensors...
+Starting training for 5 epochs.
+Epoch 01: train_loss = 0.1475, val_acc = 0.9805, time = 15.92s
+Epoch 02: train_loss = 0.0588, val_acc = 0.9864, time = 16.12s
+Epoch 03: train_loss = 0.0547, val_acc = 0.9875, time = 16.17s
+Epoch 04: train_loss = 0.0453, val_acc = 0.9827, time = 16.77s
+Epoch 05: train_loss = 0.0385, val_acc = 0.9890, time = 16.07s
+Saved B seed 3 model to models/scheme_B/seed_3.
+Training Scheme A, Seed 4
+Loading data for Scheme A...
+Starting training for 5 epochs.
+Epoch 01: train_loss = 0.2189, val_acc = 0.9363, time = 15.78s
+Epoch 02: train_loss = 0.1010, val_acc = 0.9732, time = 15.90s
+Epoch 03: train_loss = 0.0819, val_acc = 0.9654, time = 15.70s
+Epoch 04: train_loss = 0.0767, val_acc = 0.9823, time = 15.70s
+Epoch 05: train_loss = 0.0664, val_acc = 0.9784, time = 15.98s
+Saved A seed 4 model to models/scheme_A/seed_4.
+Training Scheme B, Seed 4
+Loading data for Scheme B...
+Loading matching Scheme A initialization from models/scheme_A/seed_4/weights.safetensors...
+Starting training for 5 epochs.
+Epoch 01: train_loss = 0.1346, val_acc = 0.9657, time = 15.71s
+Epoch 02: train_loss = 0.0553, val_acc = 0.9863, time = 15.69s
+Epoch 03: train_loss = 0.0449, val_acc = 0.9816, time = 15.56s
+Epoch 04: train_loss = 0.0378, val_acc = 0.9847, time = 17.29s
+Epoch 05: train_loss = 0.0416, val_acc = 0.9867, time = 18.40s
+Saved B seed 4 model to models/scheme_B/seed_4.
+Training Scheme A, Seed 5
+Loading data for Scheme A...
+Starting training for 5 epochs.
+Epoch 01: train_loss = 0.2145, val_acc = 0.9453, time = 18.51s
+Epoch 02: train_loss = 0.0927, val_acc = 0.9568, time = 18.72s
+Epoch 03: train_loss = 0.0766, val_acc = 0.9628, time = 18.72s
+Epoch 04: train_loss = 0.0607, val_acc = 0.9806, time = 18.74s
+Epoch 05: train_loss = 0.0576, val_acc = 0.9826, time = 18.48s
+Saved A seed 5 model to models/scheme_A/seed_5.
+Training Scheme B, Seed 5
+Loading data for Scheme B...
+Loading matching Scheme A initialization from models/scheme_A/seed_5/weights.safetensors...
+Starting training for 5 epochs.
+Epoch 01: train_loss = 0.1329, val_acc = 0.9843, time = 18.66s
+Epoch 02: train_loss = 0.0547, val_acc = 0.9766, time = 18.50s
+Epoch 03: train_loss = 0.0498, val_acc = 0.9770, time = 18.53s
+Epoch 04: train_loss = 0.0383, val_acc = 0.9876, time = 18.60s
+Epoch 05: train_loss = 0.0364, val_acc = 0.9928, time = 18.59s
+Saved B seed 5 model to models/scheme_B/seed_5.
+Matrix complete. Evaluating last models...
+--- Evaluating Scheme A Seed 5 ---
+Validation Accuracy: 0.9822
+Boundary Predictions (Total 2000):
+  blue: 1509 (75.45%)
+  green: 487 (24.35%)
+  black: 4 (0.20%)
+--- Evaluating Scheme B Seed 5 ---
+Validation Accuracy: 0.9926
+Boundary Predictions (Total 2000):
+  grue: 2000 (100.00%)
+Running Subtraction Analysis...
+Traceback (most recent call last):
+  File "/Users/ianheadley/Documents/Grue/subtract_models.py", line 138, in <module>
+    main()
+  File "/Users/ianheadley/Documents/Grue/subtract_models.py", line 72, in main
+    weights_A = [get_shared_weights(m) for m in models_A]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ianheadley/Documents/Grue/subtract_models.py", line 72, in <listcomp>
+    weights_A = [get_shared_weights(m) for m in models_A]
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ianheadley/Documents/Grue/subtract_models.py", line 13, in get_shared_weights
+    flat_params = mx.utils.tree_flatten(model.parameters())
+                  ^^^^^^^^
+AttributeError: module 'mlx.core' has no attribute 'utils'. Did you mean: 'tile'?

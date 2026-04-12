@@ -1,0 +1,52 @@
+# Model weights (large binary files)
+models/
+models_cifar10/
+models_independent_cifar10/
+
+# Raw datasets
+data/cifar-10-batches-py/
+data/cifar-100-python/
+dataset/train/
+dataset/val/
+dataset/boundary/
+dataset_cifar100/
+
+# Constellation lab (separate experiments)
+constellation_lab/
+results/constellation_lab/
+
+# Intermediate/timestamped result files
+results/grue_cifar10_*.json
+results/activation_alignment_*.json
+results/orthogonal_alignment_*.json
+results/orthogonal_residual_*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log

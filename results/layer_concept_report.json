@@ -1,0 +1,656 @@
+{
+  "color_blocks": {
+    "dataset": "color_blocks",
+    "missing_class": "blue",
+    "contrast_class": "green",
+    "baseline_C": {
+      "probe_accuracy": 0.9890000000000001,
+      "missing_true_rate": 0.46266666666666667,
+      "seen_true_rate": 0.6906666666666667,
+      "missing_true_cosine": 0.5280387334724268
+    },
+    "ranked_layers": [
+      {
+        "layer": "bn3",
+        "best_alpha": "0.50",
+        "best_metrics": {
+          "probe_accuracy": 0.9891666666666667,
+          "missing_true_rate": 0.6283333333333333,
+          "seen_true_rate": 0.97,
+          "missing_true_cosine": 0.7128426913420359,
+          "nan": true,
+          "purity_score": 0.25823531226813784
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.9890000000000001,
+            "missing_true_rate": 0.4680000000000001,
+            "seen_true_rate": 0.6993333333333334,
+            "missing_true_cosine": 0.5296425342857838,
+            "nan": false,
+            "purity_score": 0.006135233740011903
+          },
+          "0.25": {
+            "probe_accuracy": 0.9883333333333333,
+            "missing_true_rate": 0.488,
+            "seen_true_rate": 0.7066666666666667,
+            "missing_true_cosine": 0.5352050384779771,
+            "nan": false,
+            "purity_score": 0.028249819169441637
+          },
+          "0.50": {
+            "probe_accuracy": 0.9891666666666667,
+            "missing_true_rate": 0.6283333333333333,
+            "seen_true_rate": 0.97,
+            "missing_true_cosine": 0.7128426913420359,
+            "nan": true,
+            "purity_score": 0.25823531226813784
+          },
+          "1.00": {
+            "nan": true,
+            "purity_score": null
+          }
+        }
+      },
+      {
+        "layer": "conv1",
+        "best_alpha": "1.00",
+        "best_metrics": {
+          "probe_accuracy": 0.9890000000000001,
+          "missing_true_rate": 0.5713333333333332,
+          "seen_true_rate": 0.6433333333333333,
+          "missing_true_cosine": 0.5704494377672672,
+          "nan": false,
+          "purity_score": 0.1062053521474201
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.9890000000000001,
+            "missing_true_rate": 0.472,
+            "seen_true_rate": 0.6886666666666666,
+            "missing_true_cosine": 0.5330563977956773,
+            "nan": false,
+            "purity_score": 0.010842165494958533
+          },
+          "0.25": {
+            "probe_accuracy": 0.9900000000000002,
+            "missing_true_rate": 0.48600000000000004,
+            "seen_true_rate": 0.686,
+            "missing_true_cosine": 0.5403539108633996,
+            "nan": false,
+            "purity_score": 0.02815758869548657
+          },
+          "0.50": {
+            "probe_accuracy": 0.9863333333333333,
+            "missing_true_rate": 0.5173333333333333,
+            "seen_true_rate": 0.6793333333333333,
+            "missing_true_cosine": 0.5524985073804854,
+            "nan": false,
+            "purity_score": 0.058563220287362494
+          },
+          "1.00": {
+            "probe_accuracy": 0.9890000000000001,
+            "missing_true_rate": 0.5713333333333332,
+            "seen_true_rate": 0.6433333333333333,
+            "missing_true_cosine": 0.5704494377672672,
+            "nan": false,
+            "purity_score": 0.1062053521474201
+          }
+        }
+      },
+      {
+        "layer": "fc1",
+        "best_alpha": "1.00",
+        "best_metrics": {
+          "probe_accuracy": 0.9910000000000002,
+          "missing_true_rate": 0.506,
+          "seen_true_rate": 0.7386666666666667,
+          "missing_true_cosine": 0.5968968197107314,
+          "nan": false,
+          "purity_score": 0.07976237645248574
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.9886666666666668,
+            "missing_true_rate": 0.4653333333333333,
+            "seen_true_rate": 0.6973333333333334,
+            "missing_true_cosine": 0.5347089345157146,
+            "nan": false,
+            "purity_score": 0.005668433854977228
+          },
+          "0.25": {
+            "probe_accuracy": 0.9890000000000001,
+            "missing_true_rate": 0.4706666666666667,
+            "seen_true_rate": 0.7066666666666668,
+            "missing_true_cosine": 0.5447102596561114,
+            "nan": false,
+            "purity_score": 0.016335763091842315
+          },
+          "0.50": {
+            "probe_accuracy": 0.99,
+            "missing_true_rate": 0.48466666666666675,
+            "seen_true_rate": 0.7126666666666667,
+            "missing_true_cosine": 0.5615807681481043,
+            "nan": false,
+            "purity_score": 0.03977101733783872
+          },
+          "1.00": {
+            "probe_accuracy": 0.9910000000000002,
+            "missing_true_rate": 0.506,
+            "seen_true_rate": 0.7386666666666667,
+            "missing_true_cosine": 0.5968968197107314,
+            "nan": false,
+            "purity_score": 0.07976237645248574
+          }
+        }
+      },
+      {
+        "layer": "conv3",
+        "best_alpha": "1.00",
+        "best_metrics": {
+          "probe_accuracy": 0.9883333333333333,
+          "missing_true_rate": 0.49466666666666664,
+          "seen_true_rate": 0.7146666666666667,
+          "missing_true_cosine": 0.5552559790710607,
+          "nan": false,
+          "purity_score": 0.04494195613265012
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.9890000000000001,
+            "missing_true_rate": 0.4653333333333333,
+            "seen_true_rate": 0.6946666666666668,
+            "missing_true_cosine": 0.5306287932693958,
+            "nan": false,
+            "purity_score": 0.003961696565151163
+          },
+          "0.25": {
+            "probe_accuracy": 0.9876666666666667,
+            "missing_true_rate": 0.4693333333333333,
+            "seen_true_rate": 0.7026666666666667,
+            "missing_true_cosine": 0.5346791583697001,
+            "nan": false,
+            "purity_score": 0.008653545781969918
+          },
+          "0.50": {
+            "probe_accuracy": 0.9873333333333333,
+            "missing_true_rate": 0.476,
+            "seen_true_rate": 0.708,
+            "missing_true_cosine": 0.5417167225877444,
+            "nan": false,
+            "purity_score": 0.018505661224325287
+          },
+          "1.00": {
+            "probe_accuracy": 0.9883333333333333,
+            "missing_true_rate": 0.49466666666666664,
+            "seen_true_rate": 0.7146666666666667,
+            "missing_true_cosine": 0.5552559790710607,
+            "nan": false,
+            "purity_score": 0.04494195613265012
+          }
+        }
+      },
+      {
+        "layer": "conv2",
+        "best_alpha": "0.50",
+        "best_metrics": {
+          "probe_accuracy": 0.9883333333333335,
+          "missing_true_rate": 0.4706666666666667,
+          "seen_true_rate": 0.6960000000000001,
+          "missing_true_cosine": 0.5335550381839276,
+          "nan": false,
+          "purity_score": 0.010091485689083801
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.9883333333333335,
+            "missing_true_rate": 0.4640000000000001,
+            "seen_true_rate": 0.6926666666666667,
+            "missing_true_cosine": 0.5291947406033676,
+            "nan": false,
+            "purity_score": 0.0012446702321372016
+          },
+          "0.25": {
+            "probe_accuracy": 0.9883333333333335,
+            "missing_true_rate": 0.466,
+            "seen_true_rate": 0.6966666666666667,
+            "missing_true_cosine": 0.5308384166459243,
+            "nan": false,
+            "purity_score": 0.004066508253415535
+          },
+          "0.50": {
+            "probe_accuracy": 0.9883333333333335,
+            "missing_true_rate": 0.4706666666666667,
+            "seen_true_rate": 0.6960000000000001,
+            "missing_true_cosine": 0.5335550381839276,
+            "nan": false,
+            "purity_score": 0.010091485689083801
+          },
+          "1.00": {
+            "probe_accuracy": 0.9883333333333335,
+            "missing_true_rate": 0.4706666666666667,
+            "seen_true_rate": 0.6826666666666668,
+            "missing_true_cosine": 0.5379907802939414,
+            "nan": false,
+            "purity_score": 0.008309356744090779
+          }
+        }
+      },
+      {
+        "layer": "bn2",
+        "best_alpha": "0.10",
+        "best_metrics": {
+          "probe_accuracy": 0.9890000000000001,
+          "missing_true_rate": 0.4606666666666667,
+          "seen_true_rate": 0.696,
+          "missing_true_cosine": 0.525576311737299,
+          "nan": false,
+          "purity_score": -0.0032312108675638385
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.9890000000000001,
+            "missing_true_rate": 0.4606666666666667,
+            "seen_true_rate": 0.696,
+            "missing_true_cosine": 0.525576311737299,
+            "nan": false,
+            "purity_score": -0.0032312108675638385
+          },
+          "0.25": {
+            "probe_accuracy": 0.9883333333333333,
+            "missing_true_rate": 0.46266666666666667,
+            "seen_true_rate": 0.7113333333333334,
+            "missing_true_cosine": 0.5205821058650811,
+            "nan": false,
+            "purity_score": -0.004394980470339649
+          },
+          "0.50": {
+            "probe_accuracy": 0.9933333333333334,
+            "missing_true_rate": 0.6933333333333334,
+            "seen_true_rate": 0.0,
+            "missing_true_cosine": 0.5150164111951987,
+            "nan": true,
+            "purity_score": -0.11684449447194739
+          },
+          "1.00": {
+            "nan": true,
+            "purity_score": null
+          }
+        }
+      },
+      {
+        "layer": "bn1",
+        "best_alpha": "0.10",
+        "best_metrics": {
+          "probe_accuracy": 0.9883333333333335,
+          "missing_true_rate": 0.4613333333333333,
+          "seen_true_rate": 0.6953333333333334,
+          "missing_true_cosine": 0.5246716813047727,
+          "nan": false,
+          "purity_score": -0.0036835260838269934
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.9883333333333335,
+            "missing_true_rate": 0.4613333333333333,
+            "seen_true_rate": 0.6953333333333334,
+            "missing_true_cosine": 0.5246716813047727,
+            "nan": false,
+            "purity_score": -0.0036835260838269934
+          },
+          "0.25": {
+            "probe_accuracy": 0.9893333333333333,
+            "missing_true_rate": 0.45933333333333337,
+            "seen_true_rate": 0.7026666666666668,
+            "missing_true_cosine": 0.5193357993761698,
+            "nan": false,
+            "purity_score": -0.007351467048128613
+          },
+          "0.50": {
+            "probe_accuracy": 0.9896666666666667,
+            "missing_true_rate": 0.462,
+            "seen_true_rate": 0.7053333333333334,
+            "missing_true_cosine": 0.5089806503852208,
+            "nan": false,
+            "purity_score": -0.009529041543603067
+          },
+          "1.00": {
+            "nan": true,
+            "purity_score": null
+          }
+        }
+      }
+    ]
+  },
+  "cifar10": {
+    "dataset": "cifar10",
+    "missing_class": "truck",
+    "contrast_class": "automobile",
+    "baseline_C": {
+      "probe_accuracy": 0.8186666666666668,
+      "missing_true_rate": 0.246,
+      "seen_true_rate": 0.7899999999999999,
+      "missing_true_cosine": 0.5928547328095883
+    },
+    "ranked_layers": [
+      {
+        "layer": "bn2",
+        "best_alpha": "1.00",
+        "best_metrics": {
+          "probe_accuracy": 0.8266666666666668,
+          "missing_true_rate": 0.35,
+          "seen_true_rate": 0.9166666666666666,
+          "missing_true_cosine": 0.673810437421004,
+          "nan": true,
+          "purity_score": 0.15247785230570782
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.8183333333333334,
+            "missing_true_rate": 0.254,
+            "seen_true_rate": 0.8026666666666668,
+            "missing_true_cosine": 0.5979583200147996,
+            "nan": false,
+            "purity_score": 0.010218460269272256
+          },
+          "0.25": {
+            "probe_accuracy": 0.8236666666666667,
+            "missing_true_rate": 0.256,
+            "seen_true_rate": 0.8253333333333334,
+            "missing_true_cosine": 0.6051157125594715,
+            "nan": false,
+            "purity_score": 0.021130489874941483
+          },
+          "0.50": {
+            "probe_accuracy": 0.8216666666666665,
+            "missing_true_rate": 0.2653333333333333,
+            "seen_true_rate": 0.8553333333333333,
+            "missing_true_cosine": 0.616103256860748,
+            "nan": false,
+            "purity_score": 0.033957595358912906
+          },
+          "1.00": {
+            "probe_accuracy": 0.8266666666666668,
+            "missing_true_rate": 0.35,
+            "seen_true_rate": 0.9166666666666666,
+            "missing_true_cosine": 0.673810437421004,
+            "nan": true,
+            "purity_score": 0.15247785230570782
+          }
+        }
+      },
+      {
+        "layer": "bn1",
+        "best_alpha": "0.50",
+        "best_metrics": {
+          "probe_accuracy": 0.8166666666666668,
+          "missing_true_rate": 0.31833333333333336,
+          "seen_true_rate": 0.7433333333333334,
+          "missing_true_cosine": 0.6489672822132706,
+          "nan": true,
+          "purity_score": 0.07505627470184123
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.8190000000000002,
+            "missing_true_rate": 0.22933333333333333,
+            "seen_true_rate": 0.79,
+            "missing_true_cosine": 0.580947531716898,
+            "nan": false,
+            "purity_score": -0.02228693387967845
+          },
+          "0.25": {
+            "probe_accuracy": 0.815,
+            "missing_true_rate": 0.21333333333333335,
+            "seen_true_rate": 0.7841666666666668,
+            "missing_true_cosine": 0.5703385313771044,
+            "nan": true,
+            "purity_score": -0.05050810071624198
+          },
+          "0.50": {
+            "probe_accuracy": 0.8166666666666668,
+            "missing_true_rate": 0.31833333333333336,
+            "seen_true_rate": 0.7433333333333334,
+            "missing_true_cosine": 0.6489672822132706,
+            "nan": true,
+            "purity_score": 0.07505627470184123
+          },
+          "1.00": {
+            "nan": true,
+            "purity_score": null
+          }
+        }
+      },
+      {
+        "layer": "conv2",
+        "best_alpha": "0.50",
+        "best_metrics": {
+          "probe_accuracy": 0.8226666666666667,
+          "missing_true_rate": 0.2866666666666667,
+          "seen_true_rate": 0.828,
+          "missing_true_cosine": 0.6140620043830325,
+          "nan": false,
+          "purity_score": 0.05527030245338865
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.821,
+            "missing_true_rate": 0.2593333333333333,
+            "seen_true_rate": 0.8046666666666666,
+            "missing_true_cosine": 0.5997720811814069,
+            "nan": false,
+            "purity_score": 0.01912534085257578
+          },
+          "0.25": {
+            "probe_accuracy": 0.8223333333333332,
+            "missing_true_rate": 0.262,
+            "seen_true_rate": 0.82,
+            "missing_true_cosine": 0.6074288143912951,
+            "nan": false,
+            "purity_score": 0.026953707457519904
+          },
+          "0.50": {
+            "probe_accuracy": 0.8226666666666667,
+            "missing_true_rate": 0.2866666666666667,
+            "seen_true_rate": 0.828,
+            "missing_true_cosine": 0.6140620043830325,
+            "nan": false,
+            "purity_score": 0.05527030245338865
+          },
+          "1.00": {
+            "probe_accuracy": 0.818,
+            "missing_true_rate": 0.27466666666666667,
+            "seen_true_rate": 0.8326666666666667,
+            "missing_true_cosine": 0.6080605062805116,
+            "nan": false,
+            "purity_score": 0.03560288673546147
+          }
+        }
+      },
+      {
+        "layer": "fc1",
+        "best_alpha": "1.00",
+        "best_metrics": {
+          "probe_accuracy": 0.851,
+          "missing_true_rate": 0.2613333333333333,
+          "seen_true_rate": 0.7820000000000001,
+          "missing_true_cosine": 0.5681390275036295,
+          "nan": false,
+          "purity_score": 0.031308814013687236
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.8216666666666667,
+            "missing_true_rate": 0.24600000000000005,
+            "seen_true_rate": 0.7906666666666666,
+            "missing_true_cosine": 0.5923641418193777,
+            "nan": false,
+            "purity_score": 0.002754704504894623
+          },
+          "0.25": {
+            "probe_accuracy": 0.8276666666666668,
+            "missing_true_rate": 0.25000000000000006,
+            "seen_true_rate": 0.7906666666666666,
+            "missing_true_cosine": 0.5910286759709318,
+            "nan": false,
+            "purity_score": 0.01208697158067179
+          },
+          "0.50": {
+            "probe_accuracy": 0.836,
+            "missing_true_rate": 0.2506666666666667,
+            "seen_true_rate": 0.7886666666666667,
+            "missing_true_cosine": 0.5866762242807696,
+            "nan": false,
+            "purity_score": 0.018244079068923946
+          },
+          "1.00": {
+            "probe_accuracy": 0.851,
+            "missing_true_rate": 0.2613333333333333,
+            "seen_true_rate": 0.7820000000000001,
+            "missing_true_cosine": 0.5681390275036295,
+            "nan": false,
+            "purity_score": 0.031308814013687236
+          }
+        }
+      },
+      {
+        "layer": "conv3",
+        "best_alpha": "0.50",
+        "best_metrics": {
+          "probe_accuracy": 0.8246666666666667,
+          "missing_true_rate": 0.2533333333333333,
+          "seen_true_rate": 0.786,
+          "missing_true_cosine": 0.5919807792933037,
+          "nan": false,
+          "purity_score": 0.010896356575190946
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.819,
+            "missing_true_rate": 0.24933333333333335,
+            "seen_true_rate": 0.794,
+            "missing_true_cosine": 0.5933038142031679,
+            "nan": false,
+            "purity_score": 0.0038912073634563282
+          },
+          "0.25": {
+            "probe_accuracy": 0.8226666666666667,
+            "missing_true_rate": 0.2513333333333333,
+            "seen_true_rate": 0.7946666666666667,
+            "missing_true_cosine": 0.5934041986676554,
+            "nan": false,
+            "purity_score": 0.00960806626236671
+          },
+          "0.50": {
+            "probe_accuracy": 0.8246666666666667,
+            "missing_true_rate": 0.2533333333333333,
+            "seen_true_rate": 0.786,
+            "missing_true_cosine": 0.5919807792933037,
+            "nan": false,
+            "purity_score": 0.010896356575190946
+          },
+          "1.00": {
+            "probe_accuracy": 0.8153333333333332,
+            "missing_true_rate": 0.25,
+            "seen_true_rate": 0.7586666666666666,
+            "missing_true_cosine": 0.5828295406935116,
+            "nan": false,
+            "purity_score": -0.020012596058038568
+          }
+        }
+      },
+      {
+        "layer": "bn3",
+        "best_alpha": "0.10",
+        "best_metrics": {
+          "probe_accuracy": 0.8196666666666665,
+          "missing_true_rate": 0.24466666666666667,
+          "seen_true_rate": 0.7953333333333333,
+          "missing_true_cosine": 0.590947491315504,
+          "nan": false,
+          "purity_score": -0.0012869540803757407
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.8196666666666665,
+            "missing_true_rate": 0.24466666666666667,
+            "seen_true_rate": 0.7953333333333333,
+            "missing_true_cosine": 0.590947491315504,
+            "nan": false,
+            "purity_score": -0.0012869540803757407
+          },
+          "0.25": {
+            "probe_accuracy": 0.817,
+            "missing_true_rate": 0.24066666666666667,
+            "seen_true_rate": 0.7986666666666666,
+            "missing_true_cosine": 0.5877770706042648,
+            "nan": false,
+            "purity_score": -0.009538831102661932
+          },
+          "0.50": {
+            "probe_accuracy": 0.8150000000000001,
+            "missing_true_rate": 0.23199999999999998,
+            "seen_true_rate": 0.8046666666666666,
+            "missing_true_cosine": 0.5818743582690755,
+            "nan": false,
+            "purity_score": -0.023156853936923127
+          },
+          "1.00": {
+            "probe_accuracy": 0.8150000000000001,
+            "missing_true_rate": 0.21333333333333332,
+            "seen_true_rate": 0.8099999999999999,
+            "missing_true_cosine": 0.5675180491826808,
+            "nan": false,
+            "purity_score": -0.04900167514678716
+          }
+        }
+      },
+      {
+        "layer": "conv1",
+        "best_alpha": "0.10",
+        "best_metrics": {
+          "probe_accuracy": 0.818,
+          "missing_true_rate": 0.24400000000000005,
+          "seen_true_rate": 0.7866666666666666,
+          "missing_true_cosine": 0.5904271280554434,
+          "nan": false,
+          "purity_score": -0.005547135710405882
+        },
+        "all_alphas": {
+          "0.10": {
+            "probe_accuracy": 0.818,
+            "missing_true_rate": 0.24400000000000005,
+            "seen_true_rate": 0.7866666666666666,
+            "missing_true_cosine": 0.5904271280554434,
+            "nan": false,
+            "purity_score": -0.005547135710405882
+          },
+          "0.25": {
+            "probe_accuracy": 0.8173333333333334,
+            "missing_true_rate": 0.24133333333333334,
+            "seen_true_rate": 0.7726666666666666,
+            "missing_true_cosine": 0.5856103774604077,
+            "nan": false,
+            "purity_score": -0.01828884434125705
+          },
+          "0.50": {
+            "probe_accuracy": 0.812,
+            "missing_true_rate": 0.22866666666666666,
+            "seen_true_rate": 0.7346666666666668,
+            "missing_true_cosine": 0.5736451067477465,
+            "nan": false,
+            "purity_score": -0.06127147969758753
+          },
+          "1.00": {
+            "probe_accuracy": 0.8016666666666667,
+            "missing_true_rate": 0.18000000000000002,
+            "seen_true_rate": 0.6473333333333333,
+            "missing_true_cosine": 0.5382134731505066,
+            "nan": false,
+            "purity_score": -0.18165396316287416
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "scheme": "JC",
+  "seed": 1,
+  "epochs": 40,
+  "batch_size": 128,
+  "lr": 0.001,
+  "num_color_classes": 11,
+  "num_object_classes": 10,
+  "label_map_color": {
+    "black": 0,
+    "blue": 1,
+    "brown": 2,
+    "green": 3,
+    "grey": 4,
+    "orange": 5,
+    "pink": 6,
+    "purple": 7,
+    "red": 8,
+    "white": 9,
+    "yellow": 10
+  },
+  "label_map_object": {
+    "airplane": 0,
+    "automobile": 1,
+    "bird": 2,
+    "cat": 3,
+    "deer": 4,
+    "dog": 5,
+    "frog": 6,
+    "horse": 7,
+    "ship": 8,
+    "truck": 9
+  },
+  "final_color_acc": 0.8077,
+  "final_object_acc": 0.7046,
+  "best_color_acc": 0.825,
+  "best_object_acc": 0.7164,
+  "scheme_description": "Remove red from color supervision; CIFAR intact",
+  "model_type": "JointCNN"
+}

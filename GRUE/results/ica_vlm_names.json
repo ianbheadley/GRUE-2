@@ -1,0 +1,254 @@
+[
+  {
+    "rank": 1,
+    "ica_index": 5,
+    "kurtosis": 11.7966,
+    "top_class": "truck",
+    "class_mix": {
+      "truck": 6,
+      "frog": 5,
+      "horse": 1
+    },
+    "vlm_name": "Objects",
+    "top_indices": [
+      9214,
+      4569,
+      568,
+      4835,
+      4386,
+      6212,
+      770,
+      6965,
+      6563,
+      2807,
+      2013,
+      2656
+    ]
+  },
+  {
+    "rank": 2,
+    "ica_index": 2,
+    "kurtosis": 10.4746,
+    "top_class": "deer",
+    "class_mix": {
+      "deer": 7,
+      "truck": 1,
+      "automobile": 2,
+      "ship": 1,
+      "airplane": 1
+    },
+    "vlm_name": "Wildlife",
+    "top_indices": [
+      1534,
+      9715,
+      7492,
+      6832,
+      1687,
+      3360,
+      3782,
+      3274,
+      4734,
+      5288,
+      7702,
+      5379
+    ]
+  },
+  {
+    "rank": 3,
+    "ica_index": 0,
+    "kurtosis": 10.2396,
+    "top_class": "airplane",
+    "class_mix": {
+      "airplane": 11,
+      "bird": 1
+    },
+    "vlm_name": "Aircraft",
+    "top_indices": [
+      527,
+      5951,
+      731,
+      3548,
+      2715,
+      6923,
+      6328,
+      4759,
+      1078,
+      975,
+      778,
+      9991
+    ]
+  },
+  {
+    "rank": 4,
+    "ica_index": 3,
+    "kurtosis": 10.0658,
+    "top_class": "truck",
+    "class_mix": {
+      "truck": 12
+    },
+    "vlm_name": "Trucks",
+    "top_indices": [
+      2402,
+      609,
+      5054,
+      11,
+      5967,
+      8998,
+      4284,
+      3841,
+      6672,
+      6059,
+      3846,
+      9623
+    ]
+  },
+  {
+    "rank": 5,
+    "ica_index": 7,
+    "kurtosis": 9.8499,
+    "top_class": "frog",
+    "class_mix": {
+      "frog": 12
+    },
+    "vlm_name": "Reptiles",
+    "top_indices": [
+      3588,
+      5949,
+      2830,
+      2445,
+      3717,
+      2457,
+      1071,
+      512,
+      6956,
+      827,
+      5121,
+      7043
+    ]
+  },
+  {
+    "rank": 6,
+    "ica_index": 8,
+    "kurtosis": 8.5556,
+    "top_class": "frog",
+    "class_mix": {
+      "frog": 10,
+      "bird": 2
+    },
+    "vlm_name": "Animals",
+    "top_indices": [
+      2333,
+      6471,
+      6675,
+      1931,
+      9166,
+      5199,
+      4130,
+      5545,
+      5116,
+      3905,
+      8365,
+      71
+    ]
+  },
+  {
+    "rank": 7,
+    "ica_index": 11,
+    "kurtosis": 8.3328,
+    "top_class": "dog",
+    "class_mix": {
+      "dog": 12
+    },
+    "vlm_name": "Dog portraits",
+    "top_indices": [
+      9146,
+      2915,
+      4323,
+      8288,
+      7118,
+      2936,
+      9261,
+      3487,
+      8992,
+      2012,
+      7433,
+      2803
+    ]
+  },
+  {
+    "rank": 8,
+    "ica_index": 4,
+    "kurtosis": 8.2458,
+    "top_class": "airplane",
+    "class_mix": {
+      "airplane": 12
+    },
+    "vlm_name": "Aircraft",
+    "top_indices": [
+      5951,
+      6508,
+      7652,
+      2373,
+      4809,
+      4356,
+      6304,
+      9111,
+      235,
+      2833,
+      7774,
+      4591
+    ]
+  },
+  {
+    "rank": 9,
+    "ica_index": 1,
+    "kurtosis": 7.4915,
+    "top_class": "frog",
+    "class_mix": {
+      "airplane": 2,
+      "automobile": 2,
+      "frog": 5,
+      "truck": 2,
+      "cat": 1
+    },
+    "vlm_name": "Randomness",
+    "top_indices": [
+      3219,
+      7063,
+      6373,
+      7301,
+      213,
+      1381,
+      7727,
+      3861,
+      1026,
+      9001,
+      6473,
+      5835
+    ]
+  },
+  {
+    "rank": 10,
+    "ica_index": 10,
+    "kurtosis": 6.7794,
+    "top_class": "bird",
+    "class_mix": {
+      "bird": 12
+    },
+    "vlm_name": "Birds",
+    "top_indices": [
+      2074,
+      2189,
+      182,
+      1825,
+      7049,
+      2513,
+      5042,
+      559,
+      839,
+      6078,
+      1678,
+      1392
+    ]
+  }
+]

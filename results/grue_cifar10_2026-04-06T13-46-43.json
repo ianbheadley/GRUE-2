@@ -1,0 +1,131 @@
+{
+  "experiment": "grue_cifar10",
+  "timestamp": "2026-04-06T13:46:42.370636",
+  "config": {
+    "dataset": "cifar10",
+    "seeds": [
+      1,
+      2
+    ],
+    "epochs": 30,
+    "methods": [
+      "weight_sub"
+    ],
+    "max_images": 50,
+    "val_acc_a": [
+      0.80400390625,
+      0.798828125
+    ],
+    "val_acc_b": [
+      0.827734375,
+      0.8111328125
+    ],
+    "val_acc_c": [
+      0.8147569447755814,
+      0.8081163201067183
+    ]
+  },
+  "results": {
+    "weight_subtraction": {
+      "layer_snr": {
+        "bn1": {
+          "signal_norm": 0.5455099320681752,
+          "noise_norm": 1.9552837800996625,
+          "snr": 0.2789927144235007
+        },
+        "bn2": {
+          "signal_norm": 1.361160514729964,
+          "noise_norm": 1.9409979960899484,
+          "snr": 0.7012683735167556
+        },
+        "bn3": {
+          "signal_norm": 2.2909207201364445,
+          "noise_norm": 1.6468160528241442,
+          "snr": 1.3911211894592028
+        },
+        "conv1": {
+          "signal_norm": 1.3067959660268471,
+          "noise_norm": 6.1981752114638855,
+          "snr": 0.21083559585432435
+        },
+        "conv2": {
+          "signal_norm": 8.876297333736293,
+          "noise_norm": 19.734766977794738,
+          "snr": 0.44977968775744714
+        },
+        "conv3": {
+          "signal_norm": 21.209133377875133,
+          "noise_norm": 36.17466556317878,
+          "snr": 0.5862979806950962
+        },
+        "fc1": {
+          "signal_norm": 16.2465989110844,
+          "noise_norm": 37.09490442347596,
+          "snr": 0.43797387159253076
+        }
+      },
+      "cross_seed_consistency": 0.016048425808548927
+    },
+    "weight_subtraction_ac": {
+      "layer_snr": {
+        "bn1": {
+          "signal_norm": 0.5694484252977345,
+          "noise_norm": 1.9552837800996625,
+          "snr": 0.2912356907887572
+        },
+        "bn2": {
+          "signal_norm": 1.342424277896283,
+          "noise_norm": 1.9409979960899484,
+          "snr": 0.6916154852732359
+        },
+        "bn3": {
+          "signal_norm": 2.235681001383975,
+          "noise_norm": 1.6468160528241442,
+          "snr": 1.357577844820131
+        },
+        "conv1": {
+          "signal_norm": 1.2313226670811135,
+          "noise_norm": 6.1981752114638855,
+          "snr": 0.19865889928653865
+        },
+        "conv2": {
+          "signal_norm": 8.711454459831225,
+          "noise_norm": 19.734766977794738,
+          "snr": 0.4414267705931848
+        },
+        "conv3": {
+          "signal_norm": 20.960824610936537,
+          "noise_norm": 36.17466556317878,
+          "snr": 0.5794338186357045
+        },
+        "fc1": {
+          "signal_norm": 15.848996655796501,
+          "noise_norm": 37.09490442347596,
+          "snr": 0.42725535751734456
+        }
+      },
+      "cross_seed_consistency": 0.00948568619787693
+    },
+    "weight_injection": {
+      "real_logit_shift": 18.790224075317383,
+      "shift_ratio_real_vs_random": 1.1189594402883354,
+      "baseline_fc1_probe_accuracy": 0.8600000000000001,
+      "injected_fc1_probe_accuracy": 0.8200000000000001,
+      "probe_accuracy_gain": -0.040000000000000036,
+      "probe_gain_vs_random": 0.21000000000000008
+    },
+    "weight_injection_c": {
+      "real_logit_shift": 15.172686576843262
+    }
+  },
+  "controls": {
+    "weight_injection": {
+      "random_logit_shift": 16.792587280273438,
+      "random_fc1_probe_accuracy": 0.61
+    },
+    "weight_injection_c": {
+      "random_logit_shift": 13.774280548095703
+    }
+  },
+  "summary": {}
+}

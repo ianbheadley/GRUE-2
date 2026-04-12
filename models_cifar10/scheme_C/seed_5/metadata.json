@@ -1,0 +1,23 @@
+{
+  "seed": 5,
+  "scheme": "C",
+  "dataset": "cifar10",
+  "final_val_acc": 0.8057725694444444,
+  "best_val_acc": 0.8136718753311369,
+  "epochs": 30,
+  "batch_size": 128,
+  "lr": 0.001,
+  "label_map": {
+    "airplane": 0,
+    "automobile": 1,
+    "bird": 2,
+    "cat": 3,
+    "deer": 4,
+    "dog": 5,
+    "frog": 6,
+    "horse": 7,
+    "ship": 8
+  },
+  "num_classes": 9,
+  "model_type": "ConceptCNN"
+}
