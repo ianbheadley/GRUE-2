@@ -1,4 +1,4 @@
-# GRUE-2: Explorations in Neural Interpretability & Concept Extraction
+# GRUE-2: Explorations in Feature (Concept) Detection and Extraction
 
 This repository contains a series of experiments and tools developed to understand how neural networks encode information, starting from a very simple question: **"Can we subtract models?"**
 
